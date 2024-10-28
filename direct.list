@@ -1,6 +1,6 @@
 # pt
-DOMAIN-SUFFIX,audiences.me,DIRECT
-DOMAIN-SUFFIX,leaves.red,DIRECT
+DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,leaves.red
 
 # plex
 DOMAIN,v4.plex.tv
