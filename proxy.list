@@ -1,0 +1,35 @@
+# plex
+DOMAIN,analytics.plex.tv
+DOMAIN,assets.plex.tv
+DOMAIN,clients.plex.tv
+DOMAIN,community.plex.tv
+DOMAIN,discover.provider.plex.tv
+DOMAIN,epg.provider.plex.tv
+DOMAIN,features.plex.tv
+DOMAIN,images.plex.tv
+DOMAIN,meta.plex.tv
+DOMAIN,metadata-static.plex.tv
+DOMAIN,metadata-atic.plex.tv
+DOMAIN,metadata.provider.plex.tv
+DOMAIN,music.provider.plex.tv
+DOMAIN,mp.plex.tv
+DOMAIN,mpm.plex.tv
+DOMAIN,pubsub.plex.tv
+DOMAIN,scrobbles.plex.tv
+DOMAIN,status.plex.tv
+DOMAIN,support.plex.tv
+DOMAIN,together.plex.tv
+DOMAIN,ump.plex.tv
+DOMAIN,vod.provider.plex.tv
+
+# mp
+DOMAIN,api.themoviedb.org,美国
+DOMAIN,api.tmdb.org,美国
+DOMAIN,www.themoviedb.org,美国
+DOMAIN,api.thetvdb.com,美国
+DOMAIN,webservice.fanart.tv,美国
+DOMAIN,api.telegram.org,美国
+DOMAIN,image.tmdb.org,美国
+
+# pt
+DOMAIN-SUFFIX,u2.dmhy.org,代理
