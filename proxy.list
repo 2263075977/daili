@@ -1,3 +1,6 @@
+# pt
+DOMAIN-SUFFIX,u2.dmhy.org
+
 # plex
 DOMAIN,analytics.plex.tv
 DOMAIN,assets.plex.tv
@@ -31,5 +34,7 @@ DOMAIN,webservice.fanart.tv
 DOMAIN,api.telegram.org
 DOMAIN,image.tmdb.org
 
-# pt
-DOMAIN-SUFFIX,u2.dmhy.org
+# docker代理
+DOMAIN-SUFFIX,compose-spec.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
