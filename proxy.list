@@ -23,13 +23,13 @@ DOMAIN,ump.plex.tv
 DOMAIN,vod.provider.plex.tv
 
 # mp
-DOMAIN,api.themoviedb.org,美国
-DOMAIN,api.tmdb.org,美国
-DOMAIN,www.themoviedb.org,美国
-DOMAIN,api.thetvdb.com,美国
-DOMAIN,webservice.fanart.tv,美国
-DOMAIN,api.telegram.org,美国
-DOMAIN,image.tmdb.org,美国
+DOMAIN,api.themoviedb.org
+DOMAIN,api.tmdb.org
+DOMAIN,www.themoviedb.org
+DOMAIN,api.thetvdb.com
+DOMAIN,webservice.fanart.tv
+DOMAIN,api.telegram.org
+DOMAIN,image.tmdb.org
 
 # pt
-DOMAIN-SUFFIX,u2.dmhy.org,代理
+DOMAIN-SUFFIX,u2.dmhy.org
