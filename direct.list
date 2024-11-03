@@ -7,3 +7,6 @@ DOMAIN-SUFFIX,pttime.org
 # plex
 DOMAIN,v4.plex.tv
 DOMAIN-SUFFIX,plex.direct
+
+# 域名
+DOMAIN-SUFFIX,milktea.fun
