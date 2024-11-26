@@ -1,0 +1,40 @@
+# pt
+DOMAIN-SUFFIX,u2.dmhy.org
+
+# plex
+DOMAIN,analytics.plex.tv
+DOMAIN,assets.plex.tv
+DOMAIN,clients.plex.tv
+DOMAIN,community.plex.tv
+DOMAIN,discover.provider.plex.tv
+DOMAIN,epg.provider.plex.tv
+DOMAIN,features.plex.tv
+DOMAIN,images.plex.tv
+DOMAIN,meta.plex.tv
+DOMAIN,metadata-static.plex.tv
+DOMAIN,metadata-atic.plex.tv
+DOMAIN,metadata.provider.plex.tv
+DOMAIN,music.provider.plex.tv
+DOMAIN,mp.plex.tv
+DOMAIN,mpm.plex.tv
+DOMAIN,pubsub.plex.tv
+DOMAIN,scrobbles.plex.tv
+DOMAIN,status.plex.tv
+DOMAIN,support.plex.tv
+DOMAIN,together.plex.tv
+DOMAIN,ump.plex.tv
+DOMAIN,vod.provider.plex.tv
+
+# mp
+DOMAIN,api.themoviedb.org
+DOMAIN,api.tmdb.org
+DOMAIN,www.themoviedb.org
+DOMAIN,api.thetvdb.com
+DOMAIN,webservice.fanart.tv
+DOMAIN,api.telegram.org
+DOMAIN,image.tmdb.org
+
+# docker代理
+DOMAIN-SUFFIX,compose-spec.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io

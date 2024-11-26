@@ -1,0 +1,12 @@
+# pt
+DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,leaves.red
+DOMAIN-SUFFIX,agsvpt.com
+DOMAIN-SUFFIX,pttime.org
+
+# plex
+DOMAIN,v4.plex.tv
+DOMAIN-SUFFIX,plex.direct
+
+# 域名
+DOMAIN-SUFFIX,milktea.fun
