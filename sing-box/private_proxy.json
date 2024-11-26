@@ -1,29 +1,46 @@
 {
-  "version": 1,
-  "rules": [
-    {
-      "domain": [
-        "weixinsxy.com",
-        "wxapp.tc.qq.com"
-      ]
-    },
-    {
-      "domain_suffix": [
-        ".weixinsxy.com",
-        ".wxapp.tc.qq.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "cherrytv",
-        "cherry"
-      ]
-    },
-    {
-      "ip_cidr": [
-        "129.226.3.47/32",
-        "162.62.163.63/32"
-      ]
-    }
-  ]
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "u2.dmhy.org",
+                "compose-spec.io",
+                "docker.com",
+                "docker.io"
+            ]
+        },
+        {
+            "domain": [
+                "analytics.plex.tv",
+                "assets.plex.tv",
+                "clients.plex.tv",
+                "community.plex.tv",
+                "discover.provider.plex.tv",
+                "epg.provider.plex.tv",
+                "features.plex.tv",
+                "images.plex.tv",
+                "meta.plex.tv",
+                "metadata-static.plex.tv",
+                "metadata-atic.plex.tv",
+                "metadata.provider.plex.tv",
+                "music.provider.plex.tv",
+                "mp.plex.tv",
+                "mpm.plex.tv",
+                "pubsub.plex.tv",
+                "scrobbles.plex.tv",
+                "status.plex.tv",
+                "support.plex.tv",
+                "together.plex.tv",
+                "ump.plex.tv",
+                "vod.provider.plex.tv",
+                "api.themoviedb.org",
+                "api.tmdb.org",
+                "www.themoviedb.org",
+                "api.thetvdb.com",
+                "webservice.fanart.tv",
+                "api.telegram.org",
+                "image.tmdb.org"
+            ]
+        }
+    ]
 }
