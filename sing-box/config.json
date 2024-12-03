@@ -98,21 +98,6 @@
     { "tag": "美国", "type": "urltest", "use_all_providers": true, "includes": ["美"] }
   ],
   
-  "outbound_providers": [
-    {
-      "type": "remote",
-      "tag": "dingyue",
-      "path": "/etc/sing-box/biaopiao.json",
-      "enable_healthcheck": true,
-      "healthcheck_url": "https://www.gstatic.com/generate_204",
-      "healthcheck_interval": "3m",
-      "download_url": "https://gist.githubusercontent.com/2263075977/9d8fdf8ee2221f1e0b26822cf48edb85/raw/clash.yaml",
-      "download_ua": "clash",
-      "download_interval": "30m",
-      "download_detour": "直连"
-    }
-  ],
-  
   "route": {
     "rules": [
       { "type": "logical", "mode": "or", "rules": [{"port": 53}, {"protocol": "dns"}], "outbound": "dns-out" },
