@@ -24,12 +24,12 @@
     "servers": [
       {
         "tag": "dns_direct",
-        "address": ["223.5.5.5", "119.29.29.29", "2400:3200::1", "2402:4e00::"],
+        "address": "223.5.5.5,119.29.29.29,2400:3200::1,2402:4e00::",
         "detour": "直连"
       },
       {
         "tag": "dns_proxy",
-        "address": ["https://8.8.8.8/dns-query", "https://1.1.1.1/dns-query"],
+        "address": "https://8.8.8.8/dns-query, https://1.1.1.1/dns-query",
         "detour": "代理"
       },
       {
@@ -90,12 +90,12 @@
     { "tag": "直连", "type": "direct" },
     { "tag": "dns-out", "type": "dns" },
     { "tag": "漏网", "type": "selector", "outbounds": ["代理"] },
-    { "tag": "香港", "type": "urltest", "use_all_providers": true, "includes": ["港"] },
-    { "tag": "台湾", "type": "urltest", "use_all_providers": true, "includes": ["台"] },
-    { "tag": "日本", "type": "urltest", "use_all_providers": true, "includes": ["日"] },
-    { "tag": "韩国", "type": "urltest", "use_all_providers": true, "includes": ["韩"] },
-    { "tag": "狮城", "type": "urltest", "use_all_providers": true, "includes": ["新"] },
-    { "tag": "美国", "type": "urltest", "use_all_providers": true, "includes": ["美"] }
+    { "tag": "香港", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["港"] }] },
+    { "tag": "台湾", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["台"] }] },
+    { "tag": "日本", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["日"] }] },
+    { "tag": "韩国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["韩"] }] },
+    { "tag": "狮城", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["新"] }] },
+    { "tag": "美国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["美"] }] }
   ],
   
   "route": {
