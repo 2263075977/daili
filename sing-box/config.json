@@ -125,7 +125,6 @@
         "tag": "private-direct",
         "type": "remote",
         "format": "source",
-        "path": "/etc/sing-box/rule_set/private-direct.json",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/mihomo/refs/heads/main/sing-box/private_direct.json",
         "download_detour": "直连"
       },
@@ -133,7 +132,6 @@
         "tag": "private-proxy",
         "type": "remote",
         "format": "source",
-        "path": "/etc/sing-box/rule_set/private-proxy.json",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/mihomo/refs/heads/main/sing-box/private_proxy.json",
         "download_detour": "直连"
       },
@@ -141,7 +139,6 @@
         "tag": "geosite-chat",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-chat.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
         "download_detour": "直连"
       },
@@ -149,7 +146,6 @@
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-youtube.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
         "download_detour": "直连"
       },
@@ -157,7 +153,6 @@
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-google.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
         "download_detour": "直连"
       },
@@ -165,7 +160,6 @@
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-github.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
         "download_detour": "直连"
       },
@@ -173,7 +167,6 @@
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-telegram.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
         "download_detour": "直连"
       },
@@ -181,7 +174,6 @@
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-apple.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
         "download_detour": "直连"
       },
@@ -189,7 +181,6 @@
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-microsoft.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
         "download_detour": "直连"
       },
@@ -197,7 +188,6 @@
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-geolocation-!cn.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
         "download_detour": "直连"
       },
@@ -205,7 +195,6 @@
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-cn.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "download_detour": "直连"
       },
@@ -213,7 +202,6 @@
         "tag": "geosite-private",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geosite-private.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
         "download_detour": "直连"
       },
@@ -221,7 +209,6 @@
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geoip-google.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
         "download_detour": "直连"
       },
@@ -229,7 +216,6 @@
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geoip-telegram.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
         "download_detour": "直连"
       },
@@ -237,7 +223,6 @@
         "tag": "geoip-apple",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geoip-apple.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
         "download_detour": "直连"
       },
@@ -245,7 +230,6 @@
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geoip-cn.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
         "download_detour": "直连"
       },
@@ -253,7 +237,6 @@
         "tag": "geoip-private",
         "type": "remote",
         "format": "binary",
-        "path": "/etc/sing-box/rule_set/geoip-private.srs",
         "url": "https://ghp.ci/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
         "download_detour": "直连"
       }
