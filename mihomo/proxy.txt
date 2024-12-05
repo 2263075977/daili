@@ -35,6 +35,4 @@ DOMAIN,api.telegram.org
 DOMAIN,image.tmdb.org
 
 # docker代理
-DOMAIN-SUFFIX,compose-spec.io
-DOMAIN-SUFFIX,docker.com
-DOMAIN-SUFFIX,docker.io
+DOMAIN-KEYWORD,docker
