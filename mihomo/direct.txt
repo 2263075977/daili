@@ -33,3 +33,4 @@ DOMAIN-SUFFIX,plex.direct
 
 # 域名
 DOMAIN-SUFFIX,milktea.fun
+DOMAIN-KEYWORD,notion
