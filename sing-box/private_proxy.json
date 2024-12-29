@@ -3,43 +3,18 @@
     "rules": [
         {
             "domain_suffix": [
-                "u2.dmhy.org",
-                "compose-spec.io",
-                "docker.com",
-                "docker.io"
+                "u2.dmhy.org"
             ]
         },
         {
-            "domain": [
-                "analytics.plex.tv",
-                "assets.plex.tv",
-                "clients.plex.tv",
-                "community.plex.tv",
-                "discover.provider.plex.tv",
-                "epg.provider.plex.tv",
-                "features.plex.tv",
-                "images.plex.tv",
-                "meta.plex.tv",
-                "metadata-static.plex.tv",
-                "metadata-atic.plex.tv",
-                "metadata.provider.plex.tv",
-                "music.provider.plex.tv",
-                "mp.plex.tv",
-                "mpm.plex.tv",
-                "pubsub.plex.tv",
-                "scrobbles.plex.tv",
-                "status.plex.tv",
-                "support.plex.tv",
-                "together.plex.tv",
-                "ump.plex.tv",
-                "vod.provider.plex.tv",
-                "api.themoviedb.org",
-                "api.tmdb.org",
-                "www.themoviedb.org",
-                "api.thetvdb.com",
-                "webservice.fanart.tv",
-                "api.telegram.org",
-                "image.tmdb.org"
+            "domain_keyword": [
+                "themoviedb",
+                "thetvdb",
+                "tmdb",
+                "fanart",
+                "telegram",
+                "image.tmdb.org",
+                "docker"
             ]
         }
     ]
