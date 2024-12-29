@@ -68,7 +68,8 @@
     { "tag": "韩国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇰🇷|KR|kr|首尔|韩|Korea"] }] },
     { "tag": "狮城", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇸🇬|SG|sg|新加坡|新|Singapore"] }] },
     { "tag": "美国", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] }] },
-    { "tag": "直连", "type": "direct" }
+    { "tag": "直连", "type": "direct" },
+    { "tag": "dns-out", "type": "dns" }
   ],
   
   "route": 
@@ -77,8 +78,7 @@
    "final": "漏网",
    "rules": 
    [
-     {"action": "sniff"},
-     {"protocol": "dns", "action": "hijack-dns"},
+     { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "outbound": "dns-out" },
      {"rule_set": "private-direct", "outbound": "直连"},
      {"rule_set": "private-proxy", "outbound": "代理"},
      {"rule_set": "geosite-private", "outbound": "直连"},
