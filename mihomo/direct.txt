@@ -26,11 +26,6 @@ DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 
-
-# plex
-DOMAIN,v4.plex.tv
-DOMAIN-SUFFIX,plex.direct
-
 # 域名
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-KEYWORD,notion
