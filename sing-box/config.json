@@ -25,7 +25,7 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "address": "192.168.123.4", "detour": "全球直连"}
+     {"tag": "dns_direct", "address": "192.168.123.4", "detour": "直连"}
    ],
    "rules": 
    [
@@ -94,8 +94,8 @@
    ],
     
    "rule_set": [
-      { "tag": "private-direct", "type": "remote", "format": "source", "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/mihomo/refs/heads/main/sing-box/private_direct.json", "download_detour": "直连" },
-      { "tag": "private-proxy", "type": "remote", "format": "source", "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/mihomo/refs/heads/main/sing-box/private_proxy.json", "download_detour": "直连" },
+      { "tag": "private-direct", "type": "remote", "format": "source", "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/sing-box/private_direct.json", "download_detour": "直连" },
+      { "tag": "private-proxy", "type": "remote", "format": "source", "url": "https://ghp.ci/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/sing-box/private_proxy.json", "download_detour": "直连" },
       { "tag": "geosite-chat", "type": "remote", "format": "binary", "url": "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "直连" },
       { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "直连" },
       { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "直连" },
