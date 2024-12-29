@@ -36,6 +36,13 @@
 
 "inbounds": [
   {
+    "type": "direct",
+    "tag": "dnsIn",
+    "listen": "::",
+    "listen_port": 53,
+    "network": "udp"
+  },
+  {
     "type": "tun",
     "address": "172.18.0.1/30",
     "mtu": 9000,
