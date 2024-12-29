@@ -25,11 +25,14 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "address": "192.168.123.4", "detour": "直连"}
+     {"tag": "dns_direct", "address": "192.168.123.4", "detour": "直连"},
+     {"tag": "dns_proxy", "address": "192.168.123.4",  "detour": "代理"}
    ],
    "rules": 
    [
-     {"outbound": "any", "server": "dns_direct", "disable_cache": true}
+     {"outbound": "any", "server": "dns_direct", "disable_cache": true},
+     { "rule_set": "geosite-cn", "server": "dns_direct" },
+     { "rule_set": "geosite-geolocation-!cn", "server": "dns_proxy" }
    ],
    "final": "dns_direct"
 },
