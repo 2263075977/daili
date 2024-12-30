@@ -2,7 +2,7 @@
 DOMAIN-SUFFIX,u2.dmhy.org
 
 # mp
-DOMAIN,image.tmdb.org
+DOMAIN-SUFFIX,tmdb.org
 DOMAIN-KEYWORD,themoviedb
 DOMAIN-KEYWORD,thetvdb
 DOMAIN-KEYWORD,fanart
