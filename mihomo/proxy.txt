@@ -2,9 +2,9 @@
 DOMAIN-SUFFIX,u2.dmhy.org
 
 # mp
+DOMAIN,image.tmdb.org
 DOMAIN-KEYWORD,themoviedb
 DOMAIN-KEYWORD,thetvdb
-DOMAIN-KEYWORD,tmdb
 DOMAIN-KEYWORD,fanart
 DOMAIN,api.telegram.org
 
