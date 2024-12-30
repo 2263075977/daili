@@ -2,7 +2,7 @@
 proxy-providers:
   airport:
     type: http
-    url: "https://gist.githubusercontent.com/2263075977/9d8fdf8ee2221f1e0b26822cf48edb85/raw/clash.yaml"
+    url: ""
     path: ./proxies/airport.yaml
     interval: 3600
     proxy: DIRECT
