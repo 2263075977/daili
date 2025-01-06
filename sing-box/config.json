@@ -16,7 +16,8 @@
         "cache_file": {
             "enabled": true,
             "path": "/etc/sing-box/cache.db",
-            "store_fakeip": true
+            "store_fakeip": true,
+            "store_rdrc": true
         }
     },
     "dns": {
@@ -34,12 +35,7 @@
         "rules": [
             {
                 "outbound": "any",
-                "server": "dns_direct",
-                "disable_cache": true
-            },
-            {
-                "rule_set": "geosite-cn",
-                "server": "dns_direct"
+                "server": "dns_resolver"
             },
             {
                 "rule_set": "geosite-geolocation-!cn",
@@ -48,9 +44,27 @@
                     "AAAA"
                 ],
                 "server": "dns_fakeip"
+            },
+            {
+                "rule_set": "geosite-geolocation-!cn",
+                "query_type": [
+                    "CNAME"
+                ],
+                "server": "dns_proxy"
+            },
+            {
+                "query_type": [
+                    "A",
+                    "AAAA",
+                    "CNAME"
+                ],
+                "invert": true,
+                "server": "dns_refused",
+                "disable_cache": true
             }
         ],
         "final": "dns_direct",
+        "independent_cache": true,
         "fakeip": {
             "enabled": true,
             "inet4_range": "198.18.0.0/15",
@@ -173,8 +187,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "HK|hk|香港|港|HongKong"
+            "filter":[
+              {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
             ]
         },
         {
@@ -183,8 +197,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "TW|tw|台湾|台|TaiWan"
+            "filter":[
+              {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
             ]
         },
         {
@@ -193,8 +207,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "JP|jp|日本|日|Japan"
+            "filter":[
+              {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
             ]
         },
         {
@@ -203,8 +217,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "KR|kr|首尔|韩|Korea"
+            "filter":[
+              {"action":"include","keywords":["KR|kr|首尔|韩|Korea"]}
             ]
         },
         {
@@ -213,8 +227,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "SG|sg|新加坡|新|Singapore"
+            "filter":[
+              {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
             ]
         },
         {
@@ -223,8 +237,8 @@
             "outbounds": [
                 "{all}"
             ],
-            "include": [
-                "US|us|美国|美|United States"
+            "filter":[
+              {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
             ]
         },
         {
