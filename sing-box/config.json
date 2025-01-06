@@ -65,10 +65,38 @@
     "independent_cache": true,
     "fakeip": {
       "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
+      "inet4_range": "198.18.0.0/15"
     }
   },
+  "inbounds": [
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "::",
+      "listen_port": 53,
+      "sniff": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 1080,
+      "sniff": true
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": [
+        "172.16.0.1/30",
+        "fd00::1/126"
+      ],
+      "mtu": 1492,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system",
+      "sniff": true
+    }
+  ],
     "inbounds": [
         {
             "type": "tun",
