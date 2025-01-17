@@ -1,45 +1,46 @@
-  "log": {
-    "level": "info",
-    "timestamp": true
-  },
-  "dns": {
-    "servers": [
-      {
-        "tag": "dns_direct",
-        "address": "223.5.5.5",
-        "detour": "直连"
-      },
-      {
-        "tag": "dns_refused",
-        "address": "rcode://refused"
-      },
-      {
-        "tag": "dns_fakeip",
-        "address": "fakeip"
-      }
-    ],
-    "rules": [
-      {
-        "outbound": "any",
-        "server": "dns_resolver"
-      },
-      {
-        "rule_set": "geosite-cn",
-        "server": "dns_direct"
-      },
-      {
-        "rule_set": "geosite-geolocation-!cn",
-        "server": "fakeip"
-      }
-    ],
-    "final": "dns_direct",
-    "independent_cache": true,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    }
-  }
+{
+    "log": {
+        "level": "info",
+        "timestamp": true
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "dns_direct",
+                "address": "223.5.5.5",
+                "detour": "直连"
+            },
+            {
+                "tag": "dns_refused",
+                "address": "rcode://refused"
+            },
+            {
+                "tag": "dns_fakeip",
+                "address": "fakeip"
+            }
+        ],
+        "rules": [
+            {
+                "outbound": "any",
+                "server": "dns_resolver"
+            },
+            {
+                "rule_set": "geosite-cn",
+                "server": "dns_direct"
+            },
+            {
+                "rule_set": "geosite-geolocation-!cn",
+                "server": "fakeip"
+            }
+        ],
+        "final": "dns_direct",
+        "independent_cache": true,
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.0/15",
+            "inet6_range": "fc00::/18"
+        }
+    },
     "inbounds": [
         {
             "type": "direct",
@@ -196,7 +197,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇭🇰"
+                    "keywords": [
+                        "🇭🇰|HK|hk|香港|港|HongKong"
+                    ]
                 }
             ]
         },
@@ -209,7 +212,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇹🇼"
+                    "keywords": [
+                        "🇹🇼|TW|tw|台湾|台|Taiwan"
+                    ]
                 }
             ]
         },
@@ -222,7 +227,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇯🇵"
+                    "keywords": [
+                        "🇯🇵|JP|jp|日本|日|Japan"
+                    ]
                 }
             ]
         },
@@ -235,7 +242,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇰🇷"
+                    "keywords": [
+                        "🇰🇷|KR|kr|韩国|韩|Korea|KOR"
+                    ]
                 }
             ]
         },
@@ -248,7 +257,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇸🇬"
+                    "keywords": [
+                        "🇸🇬|SG|sg|新加坡|狮城|Singapore"
+                    ]
                 }
             ]
         },
@@ -261,7 +272,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇺🇸"
+                    "keywords": [
+                        "🇺🇸|US|us|美国|美|USA|America"
+                    ]
                 }
             ]
         },
@@ -274,7 +287,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇷🇺"
+                    "keywords": [
+                        "🇷🇺|RU|ru|俄罗斯|俄|Russia"
+                    ]
                 }
             ]
         },
@@ -287,7 +302,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇩🇪"
+                    "keywords": [
+                        "🇩🇪|DE|de|德国|德|Germany"
+                    ]
                 }
             ]
         },
@@ -300,7 +317,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇨🇦"
+                    "keywords": [
+                        "🇨🇦|CA|ca|加拿大|加|Canada"
+                    ]
                 }
             ]
         },
@@ -313,7 +332,9 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": "🇦🇺"
+                    "keywords": [
+                        "🇦🇺|AU|au|澳大利亚|澳|Australia"
+                    ]
                 }
             ]
         },
