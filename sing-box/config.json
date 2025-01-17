@@ -299,19 +299,6 @@
             ]
         },
         {
-            "tag": "巴西",
-            "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": "🇧🇷"
-                }
-            ]
-        },
-        {
             "tag": "拿大",
             "type": "urltest",
             "outbounds": [
@@ -334,19 +321,6 @@
                 {
                     "action": "include",
                     "keywords": "🇦🇺"
-                }
-            ]
-        },
-        {
-            "tag": "瑞士",
-            "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": "🇨🇭"
                 }
             ]
         },
