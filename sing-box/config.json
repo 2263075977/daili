@@ -1,103 +1,91 @@
 {
-  "log": {
-    "disabled": false,
-    "level": "info",
-    "timestamp": true
-  },
-  "experimental": {
-    "clash_api": {
-      "external_controller": "0.0.0.0:9090",
-      "external_ui": "/etc/sing-box/ui",
-      "secret": "",
-      "external_ui_download_url": "https://ghproxy.cc/https://github.com/MetaCubeX/yacd/archive/gh-pages.zip",
-      "external_ui_download_detour": "直连",
-      "default_mode": "rule"
+    "log": {
+        "level": "info",
+        "timestamp": true
     },
-    "cache_file": {
-      "enabled": true,
-      "path": "/etc/sing-box/cache.db",
-      "store_fakeip": true,
-      "store_rdrc": true
-    }
-  },
-  "dns": {
-    "servers": [
-      {
-        "tag": "dns_direct",
-        "address": "223.5.5.5",
-        "detour": "直连"
-      },
-      {
-        "tag": "dns_fakeip",
-        "address": "fakeip"
-      },
-      {
-        "tag": "dns_refuse",
-        "address": "rcode://success"
-      }
-    ],
-    "rules": [
-      {
-        "outbound": "any",
-        "server": "dns_direct"
-      },
-      {
-        "rule_set": "geosite-geolocation-!cn",
-        "query_type": [
-          "A",
-          "AAAA",
-          "CNAME"
+    "dns": {
+        "servers": [
+            {
+                "tag": "dns_direct",
+                "address": [
+                    "223.5.5.5",
+                    "119.29.29.29"
+                ],
+                "detour": "direct"
+            },
+            {
+                "tag": "dns_proxy",
+                "address": [
+                    "https://8.8.8.8/dns-query",
+                    "https://1.1.1.1/dns-query"
+                ],
+                "address_resolver": "dns_resolver",
+                "strategy": "ipv4_only",
+                "detour": "proxy"
+            },
+            {
+                "tag": "dns_refused",
+                "address": "rcode://refused"
+            },
+            {
+                "tag": "dns_fakeip",
+                "address": "fakeip"
+            }
         ],
-        "server": "dns_fakeip"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA",
-          "CNAME"
+        "rules": [
+            {
+                "outbound": "any",
+                "server": "dns_resolver"
+            },
+            {
+                "rule_set": "geosite-geolocation-!cn",
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "server": "dns_fakeip"
+            },
+            {
+                "rule_set": "geosite-geolocation-!cn",
+                "query_type": [
+                    "CNAME"
+                ],
+                "server": "dns_proxy"
+            },
+            {
+                "query_type": [
+                    "A",
+                    "AAAA",
+                    "CNAME"
+                ],
+                "invert": true,
+                "server": "dns_refused",
+                "disable_cache": true
+            }
         ],
-        "invert": true,
-        "server": "dns_refuse",
-        "disable_cache": true
-      }
-    ],
-    "final": "dns_direct",
-    "independent_cache": true,
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15"
-    }
-  },
-  "inbounds": [
-    {
-      "type": "direct",
-      "tag": "dns-in",
-      "listen": "::",
-      "listen_port": 53,
-      "sniff": true
+        "final": "dns_direct",
+        "independent_cache": true,
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.0/15",
+            "inet6_range": "fc00::/18"
+        }
     },
-    {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "::",
-      "listen_port": 1080,
-      "sniff": true
-    },
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "address": [
-        "172.16.0.1/30",
-        "fd00::1/126"
-      ],
-      "mtu": 1492,
-      "auto_route": true,
-      "strict_route": true,
-      "stack": "system",
-      "sniff": true
-    }
-  ],
     "inbounds": [
+        {
+            "type": "direct",
+            "tag": "dns-in",
+            "listen": "::",
+            "listen_port": 53,
+            "sniff": true
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "::",
+            "listen_port": 7890,
+            "sniff": true
+        },
         {
             "type": "tun",
             "tag": "tun-in",
@@ -109,8 +97,7 @@
             "auto_route": true,
             "strict_route": true,
             "stack": "system",
-            "sniff": true,
-            "sniff_override_destination": false
+            "sniff": true
         }
     ],
     "outbounds": [
@@ -213,8 +200,11 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇭🇰"
+                }
             ]
         },
         {
@@ -223,8 +213,11 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇹🇼"
+                }
             ]
         },
         {
@@ -233,8 +226,11 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇯🇵"
+                }
             ]
         },
         {
@@ -243,8 +239,11 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["KR|kr|首尔|韩|Korea"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇰🇷"
+                }
             ]
         },
         {
@@ -253,8 +252,11 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇸🇬"
+                }
             ]
         },
         {
@@ -263,8 +265,89 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-              {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇺🇸"
+                }
+            ]
+        },
+        {
+            "tag": "罗斯",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇷🇺"
+                }
+            ]
+        },
+        {
+            "tag": "德国",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇩🇪"
+                }
+            ]
+        },
+        {
+            "tag": "巴西",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇧🇷"
+                }
+            ]
+        },
+        {
+            "tag": "拿大",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇨🇦"
+                }
+            ]
+        },
+        {
+            "tag": "澳大",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇦🇺"
+                }
+            ]
+        },
+        {
+            "tag": "瑞士",
+            "type": "urltest",
+            "outbounds": [
+                "{all}"
+            ],
+            "filter": [
+                {
+                    "action": "include",
+                    "keywords": "🇨🇭"
+                }
             ]
         },
         {
@@ -479,8 +562,24 @@
                 "url": "https://ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
                 "download_detour": "直连"
             }
-        ], 
+        ],
         "final": "漏网",
-        "auto_detect_interface": true        
+        "auto_detect_interface": true
+    },
+    "experimental": {
+        "clash_api": {
+            "external_controller": "0.0.0.0:9090",
+            "external_ui": "/etc/sing-box/ui",
+            "secret": "",
+            "external_ui_download_url": "https://ghproxy.cc/https://github.com/MetaCubeX/yacd/archive/gh-pages.zip",
+            "external_ui_download_detour": "直连",
+            "default_mode": "rule"
+        },
+        "cache_file": {
+            "enabled": true,
+            "path": "/etc/sing-box/cache.db",
+            "store_fakeip": true,
+            "store_rdrc": true
+        }
     }
 }
