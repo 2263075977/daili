@@ -7,15 +7,15 @@
         "servers": [
             {
                 "tag": "dns_direct",
-				"address": "h3://dns.alidns.com/dns-query",
-				"address_resolver": "dns_resolver",
+                "address": "h3://dns.alidns.com/dns-query",
+                "address_resolver": "dns_resolver",
                 "detour": "直连"
             },
             {
                 "tag": "dns_proxy",
-				"address": "h3://dns.google/dns-query",
-				"address_resolver": "dns_resolver",
-                "detour": "直连"
+                "address": "h3://dns.google/dns-query",
+                "address_resolver": "dns_resolver",
+                "detour": "代理"
             },
             {
                 "tag": "dns_resolver",
