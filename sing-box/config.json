@@ -7,24 +7,16 @@
         "servers": [
             {
                 "tag": "dns_direct",
-                "address": "h3://dns.alidns.com/dns-query",
-                "address_resolver": "dns_resolver",
-                "detour": "直连"
-            },
-            {
-                "tag": "dns_proxy",
-                "address": "h3://dns.google/dns-query",
-                "address_resolver": "dns_resolver",
-                "detour": "代理"
-            },
-            {
-                "tag": "dns_resolver",
                 "address": "223.5.5.5",
                 "detour": "直连"
             },
             {
                 "tag": "dns_refused",
                 "address": "rcode://refused"
+            },
+            {
+                "tag": "dns_fakeip",
+                "address": "fakeip"
             }
         ],
         "rules": [
@@ -38,11 +30,16 @@
             },
             {
                 "rule_set": "geosite-geolocation-!cn",
-                "server": "dns_proxy"
+                "server": "fakeip"
             }
         ],
         "final": "dns_direct",
-        "independent_cache": true
+        "independent_cache": true,
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.0/15",
+            "inet6_range": "fc00::/18"
+        }
     },
     "inbounds": [
         {
@@ -569,7 +566,8 @@
         "cache_file": {
             "enabled": true,
             "path": "/etc/sing-box/cache.db",
-            "store_fakeip": false
+            "store_fakeip": true,
+            "store_rdrc": true
         }
     }
 }
