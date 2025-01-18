@@ -6,7 +6,7 @@
     "dns": {
         "servers": [
             {
-                "tag": "dns_direct",  
+                "tag": "dns_direct",
                 "address": "223.5.5.5",
                 "detour": "直连"
             },
