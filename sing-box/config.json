@@ -6,7 +6,7 @@
     "dns": {
         "servers": [
             {
-                "tag": "dns_direct",
+                "tag": "dns_direct",  
                 "address": "223.5.5.5",
                 "detour": "直连"
             },
@@ -22,7 +22,7 @@
         "rules": [
             {
                 "outbound": "any",
-                "server": "dns_resolver"
+                "server": "dns_direct"
             },
             {
                 "rule_set": "geosite-cn",
@@ -30,7 +30,7 @@
             },
             {
                 "rule_set": "geosite-geolocation-!cn",
-                "server": "fakeip"
+                "server": "dns_fakeip"
             }
         ],
         "final": "dns_direct",
