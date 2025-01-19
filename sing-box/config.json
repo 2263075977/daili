@@ -297,10 +297,6 @@
                 "outbound": "dns-out"
             },
             {
-                "protocol": "quic",
-                "outbound": "dns_refused"
-            },
-            {
                 "rule_set": "private-direct",
                 "outbound": "直连"
             },
