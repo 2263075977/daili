@@ -1,5 +1,6 @@
 {
     "log": {
+        "disabled": false,
         "level": "info",
         "timestamp": true
     },
@@ -11,12 +12,17 @@
                 "detour": "直连"
             },
             {
-                "tag": "dns_refused",
-                "address": "rcode://refused"
+                "tag": "dns_proxy",
+                "address": "https://dns.google/dns-query",
+                "address_resolver": "dns_direct",
+                "address_strategy": "ipv4_only",
+                "strategy": "ipv4_only",
+                "client_subnet": "1.0.1.0",
+                "detour": "代理"
             },
             {
-                "tag": "dns_fakeip",
-                "address": "fakeip"
+                "tag": "dns_refused",
+                "address": "rcode://refused"
             }
         ],
         "rules": [
@@ -27,34 +33,29 @@
             {
                 "rule_set": "geosite-cn",
                 "server": "dns_direct"
-            },
-            {
-                "rule_set": "geosite-geolocation-!cn",
-                "server": "dns_fakeip"
             }
         ],
-        "final": "dns_direct",
-        "independent_cache": true,
-        "fakeip": {
-            "enabled": true,
-            "inet4_range": "198.18.0.0/15",
-            "inet6_range": "fc00::/18"
-        }
+        "final": "dns_proxy",
+        "strategy": "ipv4_only",
+        "disable_cache": false,
+        "disable_expire": false,
+        "independent_cache": false
     },
     "inbounds": [
         {
             "type": "direct",
             "tag": "dns-in",
             "listen": "::",
-            "listen_port": 53,
-            "sniff": true
+            "listen_port": 53
         },
         {
             "type": "mixed",
             "tag": "mixed-in",
             "listen": "::",
             "listen_port": 7890,
-            "sniff": true
+            "sniff": true,
+            "sniff_override_destination": true,
+            "set_system_proxy": false
         },
         {
             "type": "tun",
@@ -67,7 +68,8 @@
             "auto_route": true,
             "strict_route": true,
             "stack": "system",
-            "sniff": true
+            "sniff": true,
+            "sniff_override_destination": true
         }
     ],
     "outbounds": [
@@ -287,17 +289,16 @@
     "route": {
         "rules": [
             {
-                "type": "logical",
-                "mode": "or",
-                "rules": [
-                    {
-                        "port": 53
-                    },
-                    {
-                        "protocol": "dns"
-                    }
-                ],
+                "inbound": "dns-in",
                 "outbound": "dns-out"
+            },
+            {
+                "protocol": "dns",
+                "outbound": "dns-out"
+            },
+            {
+                "protocol": "quic",
+                "outbound": "dns_refused"
             },
             {
                 "rule_set": "private-direct",
@@ -502,9 +503,7 @@
         },
         "cache_file": {
             "enabled": true,
-            "path": "/etc/sing-box/cache.db",
-            "store_fakeip": true,
-            "store_rdrc": true
+            "path": "/etc/sing-box/cache.db"
         }
     }
 }
