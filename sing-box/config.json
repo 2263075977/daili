@@ -15,8 +15,6 @@
                 "tag": "dns_proxy",
                 "address": "https://dns.google/dns-query",
                 "address_resolver": "dns_direct",
-                "address_strategy": "ipv4_only",
-                "strategy": "ipv4_only",
                 "client_subnet": "1.0.1.0",
                 "detour": "代理"
             },
@@ -33,10 +31,13 @@
             {
                 "rule_set": "geosite-cn",
                 "server": "dns_direct"
+            },
+            {
+                "domain_keyword": "milktea",
+                "server": "dns_direct"
             }
         ],
         "final": "dns_proxy",
-        "strategy": "ipv4_only",
         "disable_cache": false,
         "disable_expire": false,
         "independent_cache": false
