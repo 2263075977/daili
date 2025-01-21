@@ -66,7 +66,7 @@
                 "fd00::1/126"
             ],
             "mtu": 1492,
-            "auto_route": true,
+            "auto_route": false,
             "strict_route": true,
             "stack": "system",
             "sniff": true,
