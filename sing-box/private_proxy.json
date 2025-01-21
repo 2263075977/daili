@@ -5,17 +5,6 @@
             "domain_suffix": [
                 "u2.dmhy.org"
             ]
-        },
-        {
-            "domain_keyword": [
-                "themoviedb",
-                "thetvdb",
-                "tmdb",
-                "fanart",
-                "telegram",
-                "image.tmdb.org",
-                "docker"
-            ]
         }
     ]
 }
