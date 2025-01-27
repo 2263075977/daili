@@ -9,7 +9,7 @@ proxy-providers:
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
-      interval: 300
+      interval: 180
       timeout: 5000
 
 # 全局设置
@@ -20,7 +20,7 @@ log-level: info
 ipv6: true
 keep-alive-interval: 15
 keep-alive-idle: 15
-find-process-mode: strict
+find-process-mode: off
 external-controller: 0.0.0.0:9090
 secret: 
 external-ui: ui
@@ -32,10 +32,7 @@ profile:
 unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
-geodata-mode: false
-geodata-loader: memconservative
-geo-auto-update: false
-geo-update-interval: 24
+global-ua: clash.meta
 
 # 域名嗅探
 sniffer:
@@ -51,11 +48,11 @@ sniffer:
   skip-domain:
     - "Mijia Cloud"
     - "+.push.apple.com"
+
 # tun 模式
 tun:
   enable: true
-  inet6-address:
-  stack: mixed
+  stack: system
   auto-route: true
   auto-redirect: false
   auto-detect-interface: true
@@ -63,70 +60,79 @@ tun:
     - any:53
     - tcp://any:53
   device: mihomo
-  mtu: 9000
   strict-route: true
-  gso: true
-  gso-max-size: 65536
-  udp-timeout: 300
-  endpoint-independent-nat: false
+  
 # dns 设置
 dns:
   enable: true
   prefer-h3: true
-  use-hosts: true
-  use-system-hosts: true
-  respect-rules: true
   listen: 0.0.0.0:53
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - +.lan
-    - +.local
-  default-nameserver:
-    - 192.168.123.4
+    - '+.lan'
+    - '+.local'
+  nameserver-policy:
+    'rule-set:private_direct,domestic_non_ip,direct_non_ip,lan_non_ip':
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
   nameserver:
-    - 192.168.123.4
-  proxy-server-nameserver:
-    - 192.168.123.4
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
 
-# 策略组相关
-url-test: &url-test {type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, include-all: true}
-fallback: &fallback {type: fallback, url: 'https://www.gstatic.com/generate_204', interval: 300, include-all: true}
 # 策略组
 proxy-groups:
-  - {name: 代理, type: fallback, proxies: [香港, 台湾, 日本, 韩国, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 私代, type: fallback, proxies: [香港, 台湾, 日本, 韩国, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 海外, type: fallback, proxies: [台湾, 香港, 日本, 韩国, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 媒体, type: fallback, proxies: [日本, 香港, 台湾, 韩国, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 静态, type: fallback, proxies: [韩国, 香港, 台湾, 日本, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 电报, type: fallback, proxies: [狮城, 香港, 台湾, 日本, 韩国, 美国], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 智能, type: fallback, proxies: [美国, 香港, 台湾, 日本, 韩国, 狮城], url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000}
-  - {name: 苹果, type: select, proxies: [DIRECT]}
-  - {name: 下载, type: select, proxies: [DIRECT]}
-  - {name: 微软, type: select, proxies: [DIRECT]}
-  - {name: 私直, type: select, proxies: [DIRECT]}
-  - {name: 国内, type: select, proxies: [DIRECT]}
-  - {name: 种子, type: select, proxies: [DIRECT]}
-  - {name: 内网, type: select, proxies: [DIRECT]}
+  - {name: 代理, type: fallback, proxies: [香港, 台湾, 日本, 韩国, 狮城, 美国, 罗斯, 德国, 拿大, 澳大], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 私代, type: fallback, proxies: [台湾, 日本, 韩国, 狮城, 美国, 罗斯, 德国, 拿大, 澳大, 香港], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 静态, type: fallback, proxies: [日本, 韩国, 狮城, 美国, 罗斯, 德国, 拿大, 澳大, 香港, 台湾], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 测速, type: fallback, proxies: [韩国, 狮城, 美国, 罗斯, 德国, 拿大, 澳大, 香港, 台湾, 日本], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 电报, type: fallback, proxies: [狮城, 美国, 罗斯, 德国, 拿大, 澳大, 香港, 台湾, 日本, 韩国], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 智能, type: fallback, proxies: [美国, 罗斯, 德国, 拿大, 澳大, 香港, 台湾, 日本, 韩国, 狮城], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 海外, type: fallback, proxies: [罗斯, 德国, 拿大, 澳大, 香港, 台湾, 日本, 韩国, 狮城, 美国], url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000}
+  - {name: 北美, type: select, proxies: [拿大]}
+  - {name: 欧洲, type: select, proxies: [德国]}
+  - {name: 日媒, type: select, proxies: [日本]}
+  - {name: 韩媒, type: select, proxies: [韩国]}
+  - {name: 港媒, type: select, proxies: [香港]}
+  - {name: 台媒, type: select, proxies: [台湾]}
+  - {name: 苹果, type: select, proxies: [DIRECT, 代理]}
+  - {name: 下载, type: select, proxies: [DIRECT, 代理]}
+  - {name: 微软, type: select, proxies: [DIRECT, 代理]}
+  - {name: 私直, type: select, proxies: [DIRECT, 代理]}
+  - {name: 国内, type: select, proxies: [DIRECT, 代理]}
+  - {name: 种子, type: select, proxies: [DIRECT, 代理]}
+  - {name: 内网, type: select, proxies: [DIRECT, 代理]}
   - {name: 漏网, type: fallback, proxies: [代理]}
-  # ----------------国家或地区策略组---------------------
-  - {name: 香港, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000, include-all: true, filter: "港"}
-  - {name: 台湾, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000, include-all: true, filter: "台"}
-  - {name: 日本, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000, include-all: true, filter: "日"}
-  - {name: 韩国, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000, include-all: true, filter: "韩"}
-  - {name: 狮城, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 300, timeout: 5000, include-all: true, filter: "新"}
-  - {name: 美国, type: url-test, url: 'https://chatgpt.com', interval: 300, timeout: 5000, include-all: true, filter: "美"}
+  # 国家或地区策略组
+  - {name: 香港, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇭🇰"}
+  - {name: 台湾, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇹🇼"}
+  - {name: 日本, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇯🇵"}
+  - {name: 韩国, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇰🇷"}
+  - {name: 狮城, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇸🇬"}
+  - {name: 美国, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇺🇸"}
+  - {name: 罗斯, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇷🇺"}
+  - {name: 德国, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇩🇪"}
+  - {name: 拿大, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇨🇦"}
+  - {name: 澳大, type: url-test, url: 'https://www.gstatic.com/generate_204', interval: 180, timeout: 5000, include-all: true, filter: "🇦🇺"}
+
 # 分流规则
 rules:
   # 自定义
   - RULE-SET,private_proxy,私代
   - RULE-SET,private_direct,私直
-  # 非 IP 类规则
+  # domain 类规则
+  - RULE-SET,speedtest,测速
   - RULE-SET,cdn_domainset,静态
   - RULE-SET,cdn_non_ip,静态
-  - RULE-SET,stream_non_ip,媒体
+  - RULE-SET,stream_us_non_ip,北美
+  - RULE-SET,stream_eu_non_ip,欧洲
+  - RULE-SET,stream_jp_non_ip,日媒
+  - RULE-SET,stream_kr_non_ip,韩媒
+  - RULE-SET,stream_hk_non_ip,港媒
+  - RULE-SET,stream_tw_non_ip,台媒
+  - RULE-SET,ai_non_ip,智能
   - RULE-SET,telegram_non_ip,电报
   - RULE-SET,apple_cdn,苹果
   - RULE-SET,apple_services,苹果
@@ -135,23 +141,28 @@ rules:
   - RULE-SET,download_non_ip,下载
   - RULE-SET,microsoft_cdn_non_ip,微软
   - RULE-SET,microsoft_non_ip,代理
-  - RULE-SET,ai_non_ip,智能
   - RULE-SET,global_non_ip,海外
   - RULE-SET,domestic_non_ip,国内
   - RULE-SET,direct_non_ip,种子
   - RULE-SET,lan_non_ip,内网
   # IP 类规则
   - RULE-SET,telegram_ip,电报
-  - RULE-SET,stream_ip,媒体
+  - RULE-SET,stream_us_ip,北美
+  - RULE-SET,stream_eu_ip,欧洲
+  - RULE-SET,stream_jp_ip,日媒
+  - RULE-SET,stream_kr_ip,韩媒
+  - RULE-SET,stream_hk_ip,港媒
+  - RULE-SET,stream_tw_ip,台媒
   - RULE-SET,lan_ip,内网
   - RULE-SET,domestic_ip,国内
   - RULE-SET,china_ip,国内
   - RULE-SET,china_ipv6,国内
   - MATCH,漏网
+  
 # 锚点 - 规则参数 [每12小时更新一次订阅规则，更新规则时使用代理]
-RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: 代理}
-RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 43200, format: text, proxy: 代理}
-RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 43200, format: text, proxy: 代理}
+RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 86400, format: text, proxy: 代理}
+RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 86400, format: text, proxy: 代理}
+RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 86400, format: text, proxy: 代理}
 # 订阅规则
 rule-providers:
   private_proxy:
@@ -162,6 +173,10 @@ rule-providers:
     !!merge <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/direct.txt
     path: ./rule/private_direct.txt
+  speedtest:
+    !!merge <<: *RuleSet_domain
+    url: https://ruleset.skk.moe/Clash/domainset/speedtest.txt
+    path: ./rule/speedtest.txt
   cdn_domainset:
     !!merge <<: *RuleSet_domain
     url: https://ruleset.skk.moe/Clash/domainset/cdn.txt
@@ -170,14 +185,54 @@ rule-providers:
     !!merge <<: *RuleSet_domain
     url: https://ruleset.skk.moe/Clash/non_ip/cdn.txt
     path: ./rule/cdn_non_ip.txt
-  stream_non_ip:
+  stream_us_non_ip:
     !!merge <<: *RuleSet_classical
-    url: https://ruleset.skk.moe/Clash/non_ip/stream.txt
-    path: ./rule/stream_non_ip.txt
-  stream_ip:
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_us.txt
+    path: ./rule/stream_us_non_ip.txt
+  stream_us_ip:
     !!merge <<: *RuleSet_classical
-    url: https://ruleset.skk.moe/Clash/ip/stream.txt
-    path: ./rule/stream_ip.txt
+    url: https://ruleset.skk.moe/Clash/ip/stream_us.txt
+    path: ./rule/stream_us_ip.txt
+  stream_eu_non_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_eu.txt
+    path: ./rule/stream_eu_non_ip.txt
+  stream_eu_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/ip/stream_eu.txt
+    path: ./rule/stream_eu_ip.txt
+  stream_jp_non_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_jp.txt
+    path: ./rule/stream_jp_non_ip.txt
+  stream_jp_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/ip/stream_jp.txt
+    path: ./rule/stream_jp_ip.txt
+  stream_kr_non_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_kr.txt
+    path: ./rule/stream_kr_non_ip.txt
+  stream_kr_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/ip/stream_kr.txt
+    path: ./rule/stream_kr_ip.txt
+  stream_hk_non_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_hk.txt
+    path: ./rule/stream_hk_non_ip.txt
+  stream_hk_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/ip/stream_hk.txt
+    path: ./rule/stream_hk_ip.txt
+  stream_tw_non_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/non_ip/stream_tw.txt
+    path: ./rule/stream_tw_non_ip.txt
+  stream_tw_ip:
+    !!merge <<: *RuleSet_classical
+    url: https://ruleset.skk.moe/Clash/ip/stream_tw.txt
+    path: ./rule/stream_tw_ip.txt
   ai_non_ip:
     !!merge <<: *RuleSet_classical
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
