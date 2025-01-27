@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,sjtu.edu.cn
 DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
+DOMAIN-SUFFIX,zhuque.in
 
 # 域名
 DOMAIN-KEYWORD,milktea
