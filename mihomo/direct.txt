@@ -28,7 +28,5 @@ DOMAIN-SUFFIX,zhuque.in
 
 # 域名
 DOMAIN-KEYWORD,milktea
-DOMAIN-SUFFIX,linux.do
-DOMAIN-KEYWORD,deepseek
-DOMAIN-KEYWORD,nga
+
 DOMAIN,onenav.xiaoz.top
