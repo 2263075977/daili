@@ -2,3 +2,5 @@
 DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,audiences.me
+
+DOMAIN-SUFFIX,linux.do
