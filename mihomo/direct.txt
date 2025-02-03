@@ -29,3 +29,4 @@ DOMAIN-SUFFIX,zhuque.in
 # 域名
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
+DOMAIN,www.msftconnecttest.com
