@@ -30,3 +30,4 @@ DOMAIN-SUFFIX,zhuque.in
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
 DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-KEYWORD,nvidia
