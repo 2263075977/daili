@@ -31,3 +31,8 @@ DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
+
+# 腾讯英雄联盟手游
+DOMAIN-SUFFIX,riotcdn.net
+DOMAIN-SUFFIX,riotgames.com
+DOMAIN-SUFFIX,wr.pvp.net
