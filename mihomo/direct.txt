@@ -35,6 +35,7 @@ DOMAIN-KEYWORD,nvidia
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,lzf.email
 DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
