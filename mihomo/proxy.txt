@@ -1,4 +1,6 @@
 # pt
 DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
+
 DOMAIN-KEYWORD,cursor
+DOMAIN,dl.google.com
