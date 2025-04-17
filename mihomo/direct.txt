@@ -29,7 +29,6 @@ DOMAIN-SUFFIX,audiences.me
 
 # 域名
 DOMAIN-KEYWORD,milktea
-DOMAIN-KEYWORD,notion
 DOMAIN,onenav.xiaoz.top
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
