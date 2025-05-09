@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,audiences.me
 # 域名
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
+DOMAIN,ruleset.skk.moe
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
 DOMAIN-SUFFIX,lzf.email
