@@ -33,6 +33,7 @@ DOMAIN,onenav.xiaoz.top
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
 DOMAIN-SUFFIX,lzf.email
+DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,follow.is
 
