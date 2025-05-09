@@ -1,6 +1,7 @@
 # pt
 DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
+DOMAIN-SUFFIX,springsunday.net
 
 DOMAIN-KEYWORD,cursor
 DOMAIN,dl.google.com
