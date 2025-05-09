@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,hdfans.org
 DOMAIN-SUFFIX,hdhome.org
 DOMAIN-SUFFIX,hdtime.org
 DOMAIN-SUFFIX,hdsky.me
-DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,hdarea.co
 DOMAIN-SUFFIX,ptsbao.club
 DOMAIN-SUFFIX,hdatmos.club
