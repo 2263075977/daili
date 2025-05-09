@@ -32,7 +32,6 @@ DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
-DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,lzf.email
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,follow.is
