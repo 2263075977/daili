@@ -4,5 +4,4 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,audiences.me
 
-DOMAIN-KEYWORD,cursor
 DOMAIN,dl.google.com
