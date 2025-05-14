@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,zhuque.in
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
 DOMAIN,ruleset.skk.moe
+DOMAIN,chat.voct.dev
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-KEYWORD,nvidia
 DOMAIN-SUFFIX,lzf.email
