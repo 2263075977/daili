@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,lzf.email
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,follow.is
+DOMAIN-SUFFIX,tempmail.plus
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
