@@ -25,7 +25,6 @@ DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
 
-
 # 域名
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
@@ -42,5 +41,3 @@ DOMAIN-SUFFIX,follow.is
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
-
-
