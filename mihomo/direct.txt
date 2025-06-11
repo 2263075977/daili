@@ -28,14 +28,8 @@ DOMAIN-SUFFIX,zhuque.in
 # 域名
 DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
-DOMAIN,ruleset.skk.moe
-DOMAIN,chat.voct.dev
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN-KEYWORD,nvidia
-DOMAIN-SUFFIX,lzf.email
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,hf.space
-DOMAIN-SUFFIX,follow.is
+# DOMAIN-SUFFIX,linux.do
+# DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
