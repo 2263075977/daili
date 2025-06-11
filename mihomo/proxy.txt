@@ -3,5 +3,3 @@ DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,audiences.me
-
-DOMAIN,dl.google.com
