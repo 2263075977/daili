@@ -28,6 +28,7 @@
 # 域名
 ＋.milktea
 ＋.onenav.xiaoz.top
+＋.notion.so
 # ＋.linux.do
 # ＋.follow.is
 
