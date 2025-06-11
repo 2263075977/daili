@@ -1,37 +1,37 @@
 # pt
-leaves.red
-agsvpt.com
-pttime.org
-kp.m-team.cc
-nanyangpt.com
-pthome.net
-avgv.cc
-pterclub.com
-hdfans.org
-ourbits.club
-joyhd.net
-hdfans.org
-hdhome.org
-hdtime.org
-hdsky.me
-hdarea.co
-ptsbao.club
-hdatmos.club
-hddolby.com
-keepfrds.com
-sjtu.edu.cn
-tjupt.org
-totheglory.im
-hd4fans.org
-zhuque.in
+＋.leaves.red
+＋.agsvpt.com
+＋.pttime.org
+＋.m-team.cc
+＋.nanyangpt.com
+＋.pthome.net
+＋.avgv.cc
+＋.pterclub.com
+＋.hdfans.org
+＋.ourbits.club
+＋.joyhd.net
+＋.hdfans.org
+＋.hdhome.org
+＋.hdtime.org
+＋.hdsky.me
+＋.hdarea.co
+＋.ptsbao.club
+＋.hdatmos.club
+＋.hddolby.com
+＋.keepfrds.com
+＋.sjtu.edu.cn
+＋.tjupt.org
+＋.totheglory.im
+＋.hd4fans.org
+＋.zhuque.in
 
 # 域名
-＋.milktea.fun
+DOMAIN-KEYWORD,milktea
 DOMAIN,onenav.xiaoz.top
-# linux.do
-# follow.is
+# ＋.linux.do
+# ＋.follow.is
 
 # 腾讯英雄联盟手游
-riotcdn.net
-riotgames.com
-wr.pvp.net
+＋.riotcdn.net
+＋.riotgames.com
+＋.wr.pvp.net
