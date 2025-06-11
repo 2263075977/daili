@@ -26,8 +26,8 @@
 ＋.zhuque.in
 
 # 域名
-DOMAIN-KEYWORD,milktea
-DOMAIN,onenav.xiaoz.top
+＋.milktea
+＋.onenav.xiaoz.top
 # ＋.linux.do
 # ＋.follow.is
 
