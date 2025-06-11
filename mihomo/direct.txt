@@ -29,7 +29,7 @@
 ＋.milktea
 ＋.onenav.xiaoz.top
 ＋.notion.so
-# ＋.linux.do
+＋.linux.do
 # ＋.follow.is
 
 # 腾讯英雄联盟手游
