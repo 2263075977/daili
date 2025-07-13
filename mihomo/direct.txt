@@ -1,5 +1,4 @@
 # pt
-DOMAIN-SUFFIX,leaves.red
 DOMAIN-SUFFIX,agsvpt.com
 DOMAIN-SUFFIX,pttime.org
 DOMAIN-SUFFIX,m-team.cc
