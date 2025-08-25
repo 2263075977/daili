@@ -29,6 +29,7 @@ DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
+DOMAIN,jiasu-cxv.pages.dev
 # DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
