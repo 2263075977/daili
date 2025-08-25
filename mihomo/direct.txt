@@ -30,7 +30,7 @@ DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
 DOMAIN,jiasu-cxv.pages.dev
-DOMAIN,proxy-manager-ggeu.onrender.com
+DOMAIN-SUFFIX,onrender.com
 # DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
