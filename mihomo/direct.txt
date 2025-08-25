@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,zhuque.in
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,notion.so
 # DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
