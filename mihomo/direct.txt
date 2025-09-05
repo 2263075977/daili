@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,zhuque.in
 
 # 域名
 DOMAIN-KEYWORD,milktea
+DOMAIN-KEYWORD,milkfun
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
