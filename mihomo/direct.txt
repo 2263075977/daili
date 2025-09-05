@@ -25,8 +25,8 @@ DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
 
 # 域名
-DOMAIN-KEYWORD,milktea
-DOMAIN-KEYWORD,milkfun
+DOMAIN-SUFFIX,milktea.fun
+DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
