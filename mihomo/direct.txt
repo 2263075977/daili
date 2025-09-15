@@ -26,7 +26,6 @@ DOMAIN-SUFFIX,zhuque.in
 
 # 域名
 DOMAIN-SUFFIX,milktea.fun
-DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,dns-dynamic.net
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,linux.do
