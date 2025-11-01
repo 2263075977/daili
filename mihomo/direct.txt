@@ -34,7 +34,6 @@ DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
 DOMAIN,jiasu-cxv.pages.dev
 DOMAIN-SUFFIX,onrender.com
-# DOMAIN-SUFFIX,follow.is
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
