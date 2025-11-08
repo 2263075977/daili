@@ -30,7 +30,6 @@ DOMAIN-SUFFIX,maj-soul.com
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,dns-dynamic.net
 DOMAIN-SUFFIX,onenav.xiaoz.top
-DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,notion.so
 DOMAIN,jiasu-cxv.pages.dev
 DOMAIN-SUFFIX,onrender.com
