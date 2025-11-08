@@ -5,3 +5,4 @@ DOMAIN-SUFFIX,springsunday.net
 # DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,follow.is
+DOMAIN-SUFFIX,linux.do
