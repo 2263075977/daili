@@ -41,4 +41,4 @@ DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
 
 # 机场订阅
-DOMAIN-SUFFIX,jiasujd.top
+DOMAIN,speedhkt1.jiasujd.top
