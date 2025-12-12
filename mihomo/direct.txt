@@ -41,4 +41,5 @@ DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
 
 # 机场订阅
+DOMAIN-SUFFIX,jiasujd.top
 IP-CIDR,154.40.33.20/32
