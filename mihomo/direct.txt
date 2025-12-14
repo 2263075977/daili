@@ -39,3 +39,5 @@ DOMAIN-SUFFIX,onrender.com
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
+
+IP-CIDR,154.40.33.20/32
