@@ -32,7 +32,7 @@ DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,dns-dynamic.net
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
-DOMAIN,jiasu-cxv.pages.dev
+DOMAIN,mac-qiuchenly.yltfspace.com
 DOMAIN-SUFFIX,onrender.com
 DOMAIN-SUFFIX,u1.cx
 
