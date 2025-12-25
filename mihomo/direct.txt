@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,zhuque.in
 # 域名
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
+DOMAIN-SUFFIX,macked.app
 DOMAIN-SUFFIX,maj-soul.com
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,dns-dynamic.net
