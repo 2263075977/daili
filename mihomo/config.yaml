@@ -1,37 +1,38 @@
 proxy-providers:
-  airport:
-    type: http
+  zuhe:
     url: ""
-    path: ./proxies/airport.yaml
-    interval: 3600
     proxy: DIRECT
-    health-check:
-      enable: true
-      url: http://connectivitycheck.platform.hicloud.com/generate_204
-      interval: 300
-      timeout: 5000
+    type: http
+    interval: 86400
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
 
 mixed-port: 7890
 redir-port: 7891
-tproxy-port: 7892
+bind-address: "*"
 allow-lan: true
 mode: rule
 log-level: info
 ipv6: true
+
 keep-alive-idle: 15
 keep-alive-interval: 15
 disable-keep-alive: false
+
 find-process-mode: off
+global-client-fingerprint: chrome
+
 external-ui: ui
-external-ui-url: https://ghfast.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+external-ui-url: https://ghfast.top/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip
 external-controller: '[::]:9090'
 secret: "821259"
+
 profile:
   store-selected: true
   store-fake-ip: true
+
 unified-delay: true
 tcp-concurrent: true
-global-client-fingerprint: random
+
 geodata-mode: true
 geodata-loader: standard
 geo-auto-update: true
@@ -47,32 +48,29 @@ dns:
   prefer-h3: false
   use-hosts: true
   use-system-hosts: true
-  respect-rules: true
-  listen: '[::]:53'
+  respect-rules: false
+  listen: '[::]:1053'
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  fake-ip-range6: fdfe:dcba:9876::1/64
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - 'rule-set:fakeip-filter,private_direct,trackerslist,private,cn'
-  default-nameserver:      #基础DNS服务器，必须先有它才能使用域名类型的DNS配置，因此必须为IP，此处使用阿里云DNS
+    - 'rule-set:fakeip-filter,private_direct,tracker,private,cn'
+  direct-nameserver:
+    - 211.140.13.188
+    - 211.140.188.188
+    - "[2409:8028:2000::1111]:53"
+    - "[2409:8028:2000::2222]:53"
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+  nameserver:
     - tls://223.5.5.5
     - tls://223.6.6.6
-  nameserver:         #在访问的国外网站没有匹配到任何域名规则，最终走了MATCH兜底规则时使用的DNS，为了确保不发生DNS泄漏和DNS污染，必须使用国外DNS
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
-  proxy-server-nameserver:         #解析代理节点时使用的DNS，为了使下面的respect-rules生效必须设置，最好设置为国内DNS，否则在代理的第一步就可能因为连接不上国外DNS而解析不出代理节点的IP，最终倒在起点
-    - https://dns.alidns.com/dns-query#h3=true
-    - https://doh.pub/dns-query
-  direct-nameserver:           #规则匹配到直连时使用的DNS，既然是可以直连的，当然要用国内DNS
-    - https://dns.alidns.com/dns-query#h3=true
-    - https://doh.pub/dns-query
 
 sniffer:
   enable: true
-  force-dns-mapping: true
-  parse-pure-ip: true
-  override-destination: false
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -81,21 +79,17 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
-  force-domain:
-    - +.v2ex.com
   skip-domain:
     - Mijia Cloud
 
 tun:
   enable: true
-  stack: system
+  stack: mixed
+  dns-hijack: ["any:53", "tcp://any:53"]
   auto-route: true
+  auto-redirect: true
   auto-detect-interface: true
   device: nikki
-  mtu: 9000
-  gso: true
-  gso-max-size: 65536
-  endpoint-independent-nat: false
 
 proxies:
   - name: "\U0001F1ED\U0001F1F0HK_伪 |10.2MB/s|1%"
@@ -143,8 +137,17 @@ proxies:
     sni: www.ptt.cc
     udp: true
 
-FallBack: &FallBack {type: fallback, url: 'https://gstatic.com/generate_204', interval: 300}
-UrlTest: &UrlTest {type: url-test, url: 'https://gstatic.com/generate_204', interval: 300, include-all: true}
+FallBack: &FallBack
+  type: fallback
+  url: 'https://gstatic.com/generate_204'
+  interval: 600
+  lazy: true
+UrlTest: &UrlTest
+  type: url-test
+  url: 'https://gstatic.com/generate_204'
+  interval: 300
+  lazy: true
+  include-all: true
    
 proxy-groups:
   - {name: 代理, <<: *FallBack, proxies: [香港, 台湾, 日本, 狮城, 美国, 其他]}
@@ -152,194 +155,123 @@ proxy-groups:
   - {name: 电报, <<: *FallBack, proxies: [狮城, 香港, 台湾, 日本, 美国, 其他]}
   - {name: 媒体, <<: *FallBack, proxies: [香港, 台湾, 日本, 狮城, 美国, 其他]}
 
-  - {name: 香港, <<: *UrlTest, filter: "HK_"}
-  - {name: 台湾, <<: *UrlTest, filter: "TW_"}
-  - {name: 日本, <<: *UrlTest, filter: "JP_"}
-  - {name: 狮城, <<: *UrlTest, filter: "SG_"}
-  - {name: 美国, <<: *UrlTest, filter: "US_"}
-  - {name: 其他, <<: *UrlTest, filter: "(?i)^(?!.*(?:HK_|TW_|JP_|SG_|US_)).*"}
+  - {name: 香港, <<: *UrlTest, filter: "(?i)港|hk|hongkong|hong kong|HK_"}
+  - {name: 台湾, <<: *UrlTest, filter: "(?i)台|tw|taiwan|TW_"}
+  - {name: 日本, <<: *UrlTest, filter: "(?i)日|jp|japan|JP_"}
+  - {name: 狮城, <<: *UrlTest, filter: "(?i)新|sg|singapore|SG_"}
+  - {name: 美国, <<: *UrlTest, filter: "(?i)美|us|unitedstates|united states|US_"}
+  - {name: 其他, <<: *UrlTest, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|HK_|TW_|JP_|SG_|US_)).*"}
 
 rules:
   - SRC-IP-CIDR,10.0.0.10/32,DIRECT
   - RULE-SET,private_direct,DIRECT
-  - RULE-SET,private_cursor,美国
   - RULE-SET,private_proxy,代理
   - RULE-SET,private,DIRECT
-  - RULE-SET,trackerslist,DIRECT
-  - RULE-SET,microsoft-cn,DIRECT
-  - RULE-SET,apple-cn,DIRECT
+  - RULE-SET,tracker,DIRECT
+  - RULE-SET,github,代理
+  - RULE-SET,microsoft,DIRECT
+  - RULE-SET,apple,DIRECT
   - RULE-SET,google-cn,DIRECT
   - RULE-SET,games-cn,DIRECT
   - RULE-SET,spotify,香港
-  - RULE-SET,media,媒体
-  - RULE-SET,games,代理
   - RULE-SET,ai,智能
-  - RULE-SET,networktest,DIRECT
-  - RULE-SET,proxy,代理
+  - RULE-SET,youtube,媒体
+  - RULE-SET,games,代理
+  - RULE-SET,geolocation-!cn,代理
   - RULE-SET,cn,DIRECT
   - RULE-SET,telegramip,电报,no-resolve
   - RULE-SET,privateip,DIRECT,no-resolve
   - RULE-SET,cnip,DIRECT
   - MATCH,代理
 
+
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
 rule-providers:
   private_direct:
     type: http
     behavior: classical
     format: text
-    path: ./rules/private_direct.txt
-    url: "https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/direct.txt"
-    interval: 86400
-
-  private_cursor:
-    type: http
-    behavior: classical
-    format: text
-    path: ./rules/private_cursor.txt
-    url: "https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/cursor.txt"
+    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/direct.txt"
     interval: 86400
 
   private_proxy:
     type: http
     behavior: classical
     format: text
-    path: ./rules/private_proxy.txt
-    url: "https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/proxy.txt"
+    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/proxy.txt"
     interval: 86400
 
   fakeip-filter:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/fakeip-filter.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
 
   private:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/private.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/private.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
 
-  trackerslist:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/trackerslist.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/trackerslist.mrs"
-    interval: 86400
+  tracker:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tracker.mrs"
 
-  microsoft-cn:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/microsoft-cn.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/microsoft-cn.mrs"
-    interval: 86400
+  github:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
 
-  apple-cn:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/apple-cn.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/apple-cn.mrs"
-    interval: 86400
+  microsoft:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"
+
+  apple:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"
 
   google-cn:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/google-cn.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/google-cn.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-cn.mrs"
 
   games-cn:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/games-cn.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/games-cn.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-cn.mrs"
 
   spotify:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/spotify.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/spotify.mrs"
-    interval: 86400
-
-  media:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/media.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/media.mrs"
-    interval: 86400
-
-  games:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/games.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/games.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"
 
   ai:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/ai.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/ai.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs"
 
-  networktest:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/networktest.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/networktest.mrs"
-    interval: 86400
+  youtube:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
 
-  proxy:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/proxy.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/proxy.mrs"
-    interval: 86400
+  games:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs"
+
+  geolocation-!cn:
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
 
   cn:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/cn.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cn.mrs"
-    interval: 86400
+    <<: *domain
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
 
   telegramip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    path: ./rules/telegramip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
-    interval: 86400
+    <<: *ip
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
+
+  google_ip:
+    <<: *ip
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
 
   privateip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    path: ./rules/privateip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/privateip.mrs"
-    interval: 86400
+    <<: *ip
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
 
   cnip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    path: ./rules/cnip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cnip.mrs"
-    interval: 86400
+    <<: *ip
+    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
 
