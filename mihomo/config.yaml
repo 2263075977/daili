@@ -193,14 +193,14 @@ rule-providers:
     type: http
     behavior: classical
     format: text
-    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/direct.txt"
+    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/main/mihomo/direct.txt"
     interval: 86400
 
   private_proxy:
     type: http
     behavior: classical
     format: text
-    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/refs/heads/main/mihomo/proxy.txt"
+    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/main/mihomo/proxy.txt"
     interval: 86400
 
   fakeip-filter:
