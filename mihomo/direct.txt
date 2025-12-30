@@ -28,14 +28,9 @@ DOMAIN-SUFFIX,zhuque.in
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
 DOMAIN-SUFFIX,macked.app
-DOMAIN-SUFFIX,maj-soul.com
-DOMAIN-SUFFIX,dpdns.org
-DOMAIN-SUFFIX,dns-dynamic.net
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
-DOMAIN-SUFFIX,yltfspace.com
-DOMAIN-SUFFIX,onrender.com
-DOMAIN-SUFFIX,u1.cx
+DOMAIN-KEYWORD,lemonlive
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
