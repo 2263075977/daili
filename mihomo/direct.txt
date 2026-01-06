@@ -31,7 +31,6 @@ DOMAIN-SUFFIX,macked.app
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
-DOMAIN-KEYWORD,nvidia
 
 # 腾讯英雄联盟手游
 DOMAIN-SUFFIX,riotcdn.net
