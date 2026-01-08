@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,yyshub.top
 DOMAIN-SUFFIX,macked.app
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,linux.do
 DOMAIN-KEYWORD,lemonlive
 
 # 腾讯英雄联盟手游
