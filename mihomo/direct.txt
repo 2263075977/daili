@@ -40,6 +40,5 @@ DOMAIN-SUFFIX,wr.pvp.net
 # 公益站
 DOMAIN-SUFFIX,elysia.h-e.top
 DOMAIN-SUFFIX,wzw.pp.ua
-DOMAIN-SUFFIX,anyrouter.top
 
 IP-CIDR,154.40.33.20/32
