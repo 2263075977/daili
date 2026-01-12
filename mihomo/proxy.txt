@@ -4,3 +4,6 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,v2ex.com
+
+# sidestore
+DOMAIN-SUFFIX,gsa.apple.com
