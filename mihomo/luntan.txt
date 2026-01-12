@@ -2,3 +2,6 @@
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,dash.lemonhost.me
+
+# sidestore
+DOMAIN-SUFFIX,gsa.apple.com
