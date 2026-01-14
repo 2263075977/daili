@@ -4,4 +4,3 @@ DOMAIN-SUFFIX,v2ex.com
 
 # sidestore
 DOMAIN-SUFFIX,gsa.apple.com
-DOMAIN,challenges.cloudflare.com
