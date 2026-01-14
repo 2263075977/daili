@@ -52,6 +52,5 @@ DOMAIN-SUFFIX,busiyi.world
 
 # 自建
 DOMAIN-KEYWORD,zeabur
-DOMAIN-SUFFIX,dash.lemonhost.me
 
 IP-CIDR,154.40.33.20/32
