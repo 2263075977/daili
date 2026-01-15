@@ -46,6 +46,7 @@ DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,hongshi.ggff.net
 DOMAIN-SUFFIX,abuai.chat
 DOMAIN-SUFFIX,codeqaq.com
+DOMAIN-SUFFIX,sakuraikaede.com
 
 # 新闻
 DOMAIN-SUFFIX,busiyi.world
