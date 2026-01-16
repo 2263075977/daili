@@ -56,5 +56,3 @@ DOMAIN-SUFFIX,busiyi.world
 DOMAIN-KEYWORD,zeabur
 
 IP-CIDR,154.40.33.20/32
-DOMAIN,www.doubao.com
-DOMAIN-SUFFIX,www.doubao.com
