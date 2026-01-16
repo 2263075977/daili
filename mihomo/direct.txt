@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
 
-# åå
+# Ã¥ÂÂÃ¥ÂÂ
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
 DOMAIN-SUFFIX,macked.app
@@ -32,12 +32,12 @@ DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
 
-# è¾è®¯è±éèçææ¸¸
+# Ã¨ÂÂ¾Ã¨Â®Â¯Ã¨ÂÂ±Ã©ÂÂÃ¨ÂÂÃ§ÂÂÃ¦ÂÂÃ¦Â¸Â¸
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
 
-# å¬çç«
+# Ã¥ÂÂ¬Ã§ÂÂÃ§Â«Â
 DOMAIN-SUFFIX,elysia.h-e.top
 DOMAIN-SUFFIX,wzw.pp.ua
 DOMAIN-SUFFIX,api.hotaruapi.top
@@ -49,11 +49,12 @@ DOMAIN-SUFFIX,codeqaq.com
 DOMAIN-SUFFIX,224442.xyz
 DOMAIN-SUFFIX,sakuraikaede.com
 
-# æ°é»
+# Ã¦ÂÂ°Ã©ÂÂ»
 DOMAIN-SUFFIX,busiyi.world
 
-# èªå»º
+# Ã¨ÂÂªÃ¥Â»Âº
 DOMAIN-KEYWORD,zeabur
 
 IP-CIDR,154.40.33.20/32
 DOMAIN,www.doubao.com
+DOMAIN-SUFFIX,www.doubao.com
