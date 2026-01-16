@@ -54,5 +54,3 @@ DOMAIN-SUFFIX,busiyi.world
 
 # Ã¨ÂÂªÃ¥Â»Âº
 DOMAIN-KEYWORD,zeabur
-
-IP-CIDR,154.40.33.20/32
