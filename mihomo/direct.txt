@@ -42,7 +42,7 @@ DOMAIN-SUFFIX,elysia.h-e.top
 DOMAIN-SUFFIX,wzw.pp.ua
 DOMAIN-SUFFIX,api.hotaruapi.top
 DOMAIN-SUFFIX,runanytime.hxi.me
-DOMAIN-SUFFIX,hybgzs.com
+
 DOMAIN-SUFFIX,hongshi.ggff.net
 DOMAIN-SUFFIX,abuai.chat
 DOMAIN-SUFFIX,codeqaq.com
