@@ -24,7 +24,7 @@ DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
 
-# ÃÂ¥ÃÂÃÂÃÂ¥ÃÂÃÂ
+# ziyong
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
 DOMAIN-SUFFIX,macked.app
@@ -32,12 +32,12 @@ DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
 
-# ÃÂ¨ÃÂÃÂ¾ÃÂ¨ÃÂ®ÃÂ¯ÃÂ¨ÃÂÃÂ±ÃÂ©ÃÂÃÂÃÂ¨ÃÂÃÂÃÂ§ÃÂÃÂÃÂ¦ÃÂÃÂÃÂ¦ÃÂ¸ÃÂ¸
+# game
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
 
-# ÃÂ¥ÃÂÃÂ¬ÃÂ§ÃÂÃÂÃÂ§ÃÂ«ÃÂ
+# gongyizhan
 DOMAIN-SUFFIX,elysia.h-e.top
 DOMAIN-SUFFIX,wzw.pp.ua
 DOMAIN-SUFFIX,api.hotaruapi.top
@@ -49,9 +49,8 @@ DOMAIN-SUFFIX,codeqaq.com
 DOMAIN-SUFFIX,224442.xyz
 DOMAIN-SUFFIX,sakuraikaede.com
 
-# ÃÂ¦ÃÂÃÂ°ÃÂ©ÃÂÃÂ»
+# news
 DOMAIN-SUFFIX,busiyi.world
 
-# ÃÂ¨ÃÂÃÂªÃÂ¥ÃÂ»ÃÂº
+# jichang
 DOMAIN-KEYWORD,zeabur
-DOMAIN-SUFFIX,api.224442.xyz
