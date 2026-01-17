@@ -55,3 +55,4 @@ DOMAIN-SUFFIX,busiyi.world
 # jichang
 DOMAIN-KEYWORD,zeabur
 DOMAIN-SUFFIX,doubao.com
+DOMAIN-SUFFIX,huan666.de
