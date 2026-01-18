@@ -57,3 +57,4 @@ DOMAIN-KEYWORD,zeabur
 DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,huan666.de
 DOMAIN-SUFFIX,ggff.net
+DOMAIN-SUFFIX,betterclau.de
