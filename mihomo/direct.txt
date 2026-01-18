@@ -59,3 +59,4 @@ DOMAIN-SUFFIX,huan666.de
 DOMAIN-SUFFIX,ggff.net
 DOMAIN-SUFFIX,betterclau.de
 DOMAIN,challenges.cloudflare.com
+DOMAIN-SUFFIX,h-e.top
