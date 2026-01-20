@@ -4,9 +4,10 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,audiences.me
 
-# Cursor
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,v2ex.com
+DOMAIN,www.wnflb99.com
+DOMAIN-SUFFIX,wnflb2023.com
 
 # sidestore
 DOMAIN-SUFFIX,gsa.apple.com
