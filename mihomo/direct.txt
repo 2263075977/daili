@@ -61,3 +61,4 @@ DOMAIN-SUFFIX,betterclau.de
 DOMAIN,challenges.cloudflare.com
 DOMAIN-SUFFIX,h-e.top
 DOMAIN-SUFFIX,heroman.wtf
+DOMAIN-SUFFIX,milkfarm.net
