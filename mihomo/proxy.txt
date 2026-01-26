@@ -1,1 +1,2 @@
 DOMAIN-SUFFIX,hybgzs.com
+DOMAIN-SUFFIX,52pokemon.cc
