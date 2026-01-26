@@ -4,7 +4,6 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,audiences.me
 
-DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN,www.wnflb99.com
 DOMAIN-SUFFIX,wnflb2023.com
