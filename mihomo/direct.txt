@@ -63,3 +63,4 @@ DOMAIN-SUFFIX,h-e.top
 DOMAIN-SUFFIX,heroman.wtf
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
+DOMAIN-SUFFIX,letsencrypt.org
