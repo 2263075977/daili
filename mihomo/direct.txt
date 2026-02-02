@@ -23,7 +23,6 @@ DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
-
 # ziyong
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
@@ -31,27 +30,22 @@ DOMAIN-SUFFIX,macked.app
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
-
 # game
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
 DOMAIN-SUFFIX,wr.pvp.net
-
 # gongyizhan
 DOMAIN-SUFFIX,elysia.h-e.top
 DOMAIN-SUFFIX,wzw.pp.ua
 DOMAIN-SUFFIX,api.hotaruapi.top
 DOMAIN-SUFFIX,runanytime.hxi.me
-
 DOMAIN-SUFFIX,hongshi.ggff.net
 DOMAIN-SUFFIX,abuai.chat
 DOMAIN-SUFFIX,codeqaq.com
 DOMAIN-SUFFIX,224442.xyz
 DOMAIN-SUFFIX,sakuraikaede.com
-
 # news
 DOMAIN-SUFFIX,busiyi.world
-
 # jichang
 DOMAIN-KEYWORD,zeabur
 DOMAIN-SUFFIX,doubao.com
@@ -64,4 +58,3 @@ DOMAIN-SUFFIX,heroman.wtf
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
 DOMAIN-SUFFIX,letsencrypt.org
-DOMAIN-SUFFIX,deepseek.com
