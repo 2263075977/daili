@@ -11,3 +11,4 @@ DOMAIN-SUFFIX,wnflb2023.com
 
 # sidestore
 DOMAIN-SUFFIX,gsa.apple.com
+DOMAIN-SUFFIX,deepseek.com
