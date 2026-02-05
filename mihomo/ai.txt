@@ -1,18 +1,17 @@
-payload:
-  # === Google Gemini (核心组合) ===
-  - DOMAIN,generativelanguage.googleapis.com       # ✅ 精准：Gemini CLI 的核心 API
-  - DOMAIN-SUFFIX,gemini.google.com                # 🌐 稳妥：确保网页版所有子域通畅
-  - DOMAIN-SUFFIX,ai.google.dev                    # 🌐 稳妥：开发者平台（包含子域）
-  - DOMAIN,alkalimojo-pa.clients6.google.com       # ✅ 精准：特定的对话流接口
+# === Google Gemini (核心组合) ===
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN,alkalimojo-pa.clients6.google.com
 
-  # === Anthropic (Claude Code CLI 必备) ===
-  - DOMAIN-SUFFIX,anthropic.com
-  - DOMAIN-SUFFIX,claude.ai
-  - DOMAIN-SUFFIX,claudeusercontent.com            # 网页版附件/图片显示关键
+# === Anthropic (Claude Code CLI 必备) ===
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
 
-  # === OpenAI (Codex / ChatGPT) ===
-  - DOMAIN-SUFFIX,openai.com
-  - DOMAIN-SUFFIX,chatgpt.com
-  - DOMAIN-SUFFIX,oaistatic.com                    # 静态资源（不加网页会缺图标/样式）
-  - DOMAIN-SUFFIX,oaiusercontent.com               # 用户生成内容（如生成的图片/代码块）
-  - DOMAIN,ai.com
+# === OpenAI (Codex / ChatGPT) ===
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN,ai.com
