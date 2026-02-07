@@ -60,3 +60,4 @@ DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,edu.rs
 DOMAIN-SUFFIX,feisakura.fun
 DOMAIN-SUFFIX,sxxe.net
+DOMAIN-SUFFIX,qaq.al
