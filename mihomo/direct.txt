@@ -61,3 +61,4 @@ DOMAIN-SUFFIX,edu.rs
 DOMAIN-SUFFIX,feisakura.fun
 DOMAIN-SUFFIX,sxxe.net
 DOMAIN-SUFFIX,qaq.al
+DOMAIN-SUFFIX,us.ci
