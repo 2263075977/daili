@@ -62,3 +62,4 @@ DOMAIN-SUFFIX,feisakura.fun
 DOMAIN-SUFFIX,sxxe.net
 DOMAIN-SUFFIX,qaq.al
 DOMAIN-SUFFIX,us.ci
+DOMAIN-SUFFIX,hybgzs.com
