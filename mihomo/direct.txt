@@ -65,3 +65,4 @@ DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,xingzhixiaozhuang.cn
 DOMAIN-SUFFIX,105117.xyz
 DOMAIN-SUFFIX,121628.xyz
+DOMAIN-SUFFIX,crisxie.top
