@@ -64,3 +64,4 @@ DOMAIN-SUFFIX,qaq.al
 DOMAIN-SUFFIX,us.ci
 DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,xingzhixiaozhuang.cn
+DOMAIN-SUFFIX,105117.xyz
