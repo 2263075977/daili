@@ -50,7 +50,6 @@ DOMAIN-SUFFIX,busiyi.world
 DOMAIN-KEYWORD,zeabur
 DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,huan666.de
-DOMAIN-SUFFIX,ggff.net
 DOMAIN-SUFFIX,betterclau.de
 DOMAIN-SUFFIX,h-e.top
 DOMAIN-SUFFIX,heroman.wtf
