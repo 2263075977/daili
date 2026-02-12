@@ -42,7 +42,6 @@ DOMAIN-SUFFIX,runanytime.hxi.me
 DOMAIN-SUFFIX,hongshi.ggff.net
 DOMAIN-SUFFIX,abuai.chat
 DOMAIN-SUFFIX,codeqaq.com
-DOMAIN-SUFFIX,224442.xyz
 DOMAIN-SUFFIX,sakuraikaede.com
 # news
 DOMAIN-SUFFIX,busiyi.world
