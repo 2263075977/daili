@@ -77,3 +77,4 @@ DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,windhub.cc
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,argotunnel.com
