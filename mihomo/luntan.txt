@@ -7,6 +7,5 @@ DOMAIN-SUFFIX,v2ex.com
 DOMAIN,www.wnflb99.com
 DOMAIN-SUFFIX,wnflb2023.com
 # sidestore
-DOMAIN-SUFFIX,gsa.apple.com
 DOMAIN,challenges.cloudflare.com
 DOMAIN-SUFFIX,bgm.tv
