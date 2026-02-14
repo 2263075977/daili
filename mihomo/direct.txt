@@ -78,3 +78,4 @@ DOMAIN-SUFFIX,windhub.cc
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,dpdns.org
+DOMAIN-SUFFIX,x666.me
