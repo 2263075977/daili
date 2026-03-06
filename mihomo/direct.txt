@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,haidan.video
 # ziyong
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
