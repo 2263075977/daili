@@ -11,3 +11,4 @@ DOMAIN,gsa.apple.com
 DOMAIN,challenges.cloudflare.com
 DOMAIN-SUFFIX,bgm.tv
 DOMAIN-SUFFIX,haijiaolove.xyz
+DOMAIN-SUFFIX,weyolo.com
