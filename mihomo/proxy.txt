@@ -1,2 +1,2 @@
 DOMAIN-SUFFIX,52pokemon.cc
-DOMAIN-SUFFIX,dns.cloudflare.com
+DOMAIN,dns.cloudflare.com
