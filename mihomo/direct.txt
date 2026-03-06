@@ -23,6 +23,8 @@ DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,hd4fans.org
 DOMAIN-SUFFIX,zhuque.in
+DOMAIN-SUFFIX,hhanclub.net
+DOMAIN-SUFFIX,audiences.me
 # ziyong
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,yyshub.top
@@ -47,7 +49,6 @@ DOMAIN-SUFFIX,sakuraikaede.com
 DOMAIN-SUFFIX,busiyi.world
 # jichang
 DOMAIN-KEYWORD,zeabur
-DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,huan666.de
 DOMAIN-SUFFIX,betterclau.de
 DOMAIN-SUFFIX,h-e.top
@@ -75,7 +76,6 @@ DOMAIN-SUFFIX,67.si
 DOMAIN-SUFFIX,223384.xyz
 DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,windhub.cc
-DOMAIN-SUFFIX,hhanclub.net
-DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,x666.me
+DOMAIN,tracker.cinefiles.info
