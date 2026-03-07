@@ -80,3 +80,4 @@ DOMAIN-SUFFIX,windhub.cc
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,x666.me
 DOMAIN,tracker.cinefiles.info
+DOMAIN-SUFFIX,argotunnel.com
