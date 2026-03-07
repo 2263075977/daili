@@ -9,4 +9,4 @@ DOMAIN-SUFFIX,wnflb2023.com
 # sidestore
 DOMAIN,gsa.apple.com
 DOMAIN,challenges.cloudflare.com
-
+DOMAIN-SUFFIX,fanart.tv
