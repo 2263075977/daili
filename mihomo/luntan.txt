@@ -8,5 +8,5 @@ DOMAIN,www.wnflb99.com
 DOMAIN-SUFFIX,wnflb2023.com
 # sidestore
 DOMAIN,gsa.apple.com
-DOMAIN,challenges.cloudflare.com
+DOMAIN,api.cloudflare.com
 DOMAIN-SUFFIX,fanart.tv
