@@ -1,3 +1,7 @@
+# Iconify SVG 图标 CDN API
+DOMAIN,api.unisvg.com
+DOMAIN,api.simplesvg.com
+DOMAIN,api.iconify.design
 # pt
 DOMAIN-SUFFIX,agsvpt.com
 DOMAIN-SUFFIX,pttime.org
