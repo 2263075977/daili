@@ -81,3 +81,4 @@ DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,x666.me
 DOMAIN,tracker.cinefiles.info
 DOMAIN-SUFFIX,argotunnel.com
+DOMAIN-SUFFIX,thepetcity.co
