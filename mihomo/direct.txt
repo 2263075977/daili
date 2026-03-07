@@ -86,3 +86,4 @@ DOMAIN-SUFFIX,x666.me
 DOMAIN,tracker.cinefiles.info
 DOMAIN-SUFFIX,argotunnel.com
 DOMAIN-SUFFIX,thepetcity.co
+DOMAIN-SUFFIX,fuliba2023.net
