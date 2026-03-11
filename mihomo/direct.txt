@@ -38,6 +38,13 @@ DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
 DOMAIN-SUFFIX,surge-activation.com
+DOMAIN-SUFFIX,busiyi.world
+DOMAIN-SUFFIX,argotunnel.com
+DOMAIN-SUFFIX,thepetcity.co
+DOMAIN-SUFFIX,fuliba2023.net
+# jichang
+DOMAIN-SUFFIX,milkfarm.net
+DOMAIN-SUFFIX,ammilk.com
 # game
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
@@ -51,16 +58,10 @@ DOMAIN-SUFFIX,hongshi.ggff.net
 DOMAIN-SUFFIX,abuai.chat
 DOMAIN-SUFFIX,codeqaq.com
 DOMAIN-SUFFIX,sakuraikaede.com
-# news
-DOMAIN-SUFFIX,busiyi.world
-# jichang
-DOMAIN-KEYWORD,zeabur
 DOMAIN-SUFFIX,huan666.de
 DOMAIN-SUFFIX,betterclau.de
 DOMAIN-SUFFIX,h-e.top
 DOMAIN-SUFFIX,heroman.wtf
-DOMAIN-SUFFIX,milkfarm.net
-DOMAIN-SUFFIX,ammilk.com
 DOMAIN-SUFFIX,letsencrypt.org
 DOMAIN-SUFFIX,edu.rs
 DOMAIN-SUFFIX,feisakura.fun
@@ -85,7 +86,4 @@ DOMAIN-SUFFIX,windhub.cc
 DOMAIN-SUFFIX,dpdns.org
 DOMAIN-SUFFIX,x666.me
 DOMAIN,tracker.cinefiles.info
-DOMAIN-SUFFIX,argotunnel.com
-DOMAIN-SUFFIX,thepetcity.co
-DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,duckmail.sbs
