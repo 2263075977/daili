@@ -89,4 +89,3 @@ DOMAIN-SUFFIX,thepetcity.co
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,duckmail.sbs
-DOMAIN,challenges.cloudflare.com
