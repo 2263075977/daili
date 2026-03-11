@@ -2,11 +2,12 @@
 DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
+# luntan
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN,www.wnflb99.com
 DOMAIN-SUFFIX,wnflb2023.com
+DOMAIN-SUFFIX,linux.do
 # sidestore
 DOMAIN,gsa.apple.com
 DOMAIN,ani.sidestore.io
 DOMAIN-SUFFIX,fanart.tv
-DOMAIN-SUFFIX,linux.do
