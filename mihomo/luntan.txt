@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN,gsa.apple.com
 DOMAIN,api.cloudflare.com
 DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,linux.do
