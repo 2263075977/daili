@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,macked.app
 DOMAIN-SUFFIX,onenav.xiaoz.top
 DOMAIN-SUFFIX,notion.so
 DOMAIN-KEYWORD,lemonlive
+DOMAIN-SUFFIX,surge-activation.com
 # game
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,riotgames.com
