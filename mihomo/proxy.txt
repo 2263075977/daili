@@ -1,4 +1,2 @@
-DOMAIN-SUFFIX,52pokemon.cc
-DOMAIN,dns.cloudflare.com
 # npm 包的 CDN
 DOMAIN-SUFFIX,unpkg.com
