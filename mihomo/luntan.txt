@@ -8,4 +8,6 @@ DOMAIN-SUFFIX,linux.do
 # sidestore
 DOMAIN,gsa.apple.com
 DOMAIN,ani.sidestore.io
+# img
 DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,shields.io
