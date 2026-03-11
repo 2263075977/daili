@@ -43,6 +43,7 @@ DOMAIN-SUFFIX,argotunnel.com
 DOMAIN-SUFFIX,thepetcity.co
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
+DOMAIN-SUFFIX,wnflb99.com
 # jichang
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
