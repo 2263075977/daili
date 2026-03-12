@@ -11,3 +11,4 @@ DOMAIN,ani.sidestore.io
 # img
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,shields.io
+DOMAIN-SUFFIX,ahhhhfs.com
