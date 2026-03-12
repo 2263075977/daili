@@ -4,3 +4,4 @@ DOMAIN-SUFFIX,lscr.io
 DOMAIN,esm.sh
 # Turrit
 DOMAIN-SUFFIX,iturrit.com
+DOMAIN-SUFFIX,aloxaf.com
