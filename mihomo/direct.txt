@@ -47,6 +47,7 @@ DOMAIN-SUFFIX,wnflb99.com
 DOMAIN-KEYWORD,ocsp
 DOMAIN-KEYWORD,idai
 DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,libtorrent
 DOMAIN,challenges.cloudflare.com
 DOMAIN-SUFFIX,nel.cloudflare.com
 # jichang
