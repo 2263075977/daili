@@ -12,3 +12,5 @@ DOMAIN,ani.sidestore.io
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,shields.io
 DOMAIN-SUFFIX,ahhhhfs.com
+DOMAIN,gravatar.loli.net
+DOMAIN,i.pximg.org
