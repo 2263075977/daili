@@ -46,6 +46,7 @@ DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN-SUFFIX,wnflb99.com
 DOMAIN-KEYWORD,ocsp
 DOMAIN-KEYWORD,idai
+DOMAIN-KEYWORD,tracker
 DOMAIN,challenges.cloudflare.com
 DOMAIN-SUFFIX,nel.cloudflare.com
 # jichang
