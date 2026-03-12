@@ -2,3 +2,5 @@
 DOMAIN-SUFFIX,unpkg.com
 DOMAIN-SUFFIX,lscr.io
 DOMAIN,esm.sh
+# Turrit
+DOMAIN-SUFFIX,iturrit.com
