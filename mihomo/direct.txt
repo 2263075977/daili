@@ -47,6 +47,7 @@ DOMAIN-SUFFIX,wnflb99.com
 DOMAIN-KEYWORD,ocsp
 DOMAIN-KEYWORD,idai
 DOMAIN,challenges.cloudflare.com
+DOMAIN,a.nel.cloudflare.com
 # jichang
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
