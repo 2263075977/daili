@@ -5,3 +5,5 @@ DOMAIN,esm.sh
 # Turrit
 DOMAIN-SUFFIX,iturrit.com
 DOMAIN-SUFFIX,aloxaf.com
+# emby
+DOMAIN,www.mb3admin.com
