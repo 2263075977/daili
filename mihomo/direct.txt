@@ -1,7 +1,3 @@
-# Iconify SVG 图标 CDN API
-DOMAIN,api.unisvg.com
-DOMAIN,api.simplesvg.com
-DOMAIN,api.iconify.design
 # pt
 DOMAIN-SUFFIX,agsvpt.com
 DOMAIN-SUFFIX,pttime.org
@@ -32,64 +28,6 @@ DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,haidan.video
 # ziyong
 DOMAIN-SUFFIX,milktea.fun
-DOMAIN-SUFFIX,yyshub.top
-DOMAIN-SUFFIX,macked.app
-DOMAIN-SUFFIX,onenav.xiaoz.top
-DOMAIN-SUFFIX,notion.so
-DOMAIN-KEYWORD,lemonlive
-DOMAIN-SUFFIX,surge-activation.com
-DOMAIN-SUFFIX,busiyi.world
-DOMAIN-SUFFIX,argotunnel.com
-DOMAIN-SUFFIX,thepetcity.co
-DOMAIN-SUFFIX,fuliba2023.net
-DOMAIN-SUFFIX,wnflb2023.com
-DOMAIN-SUFFIX,wnflb99.com
-DOMAIN-KEYWORD,ocsp
-DOMAIN-KEYWORD,idai
-DOMAIN-KEYWORD,tracker
-DOMAIN-KEYWORD,libtorrent
 # jichang
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
-# game
-DOMAIN-SUFFIX,riotcdn.net
-DOMAIN-SUFFIX,riotgames.com
-DOMAIN-SUFFIX,wr.pvp.net
-# gongyizhan
-DOMAIN-SUFFIX,elysia.h-e.top
-DOMAIN-SUFFIX,wzw.pp.ua
-DOMAIN-SUFFIX,api.hotaruapi.top
-DOMAIN-SUFFIX,runanytime.hxi.me
-DOMAIN-SUFFIX,hongshi.ggff.net
-DOMAIN-SUFFIX,abuai.chat
-DOMAIN-SUFFIX,codeqaq.com
-DOMAIN-SUFFIX,sakuraikaede.com
-DOMAIN-SUFFIX,huan666.de
-DOMAIN-SUFFIX,betterclau.de
-DOMAIN-SUFFIX,h-e.top
-DOMAIN-SUFFIX,heroman.wtf
-DOMAIN-SUFFIX,letsencrypt.org
-DOMAIN-SUFFIX,edu.rs
-DOMAIN-SUFFIX,feisakura.fun
-DOMAIN-SUFFIX,sxxe.net
-DOMAIN-SUFFIX,qaq.al
-DOMAIN-SUFFIX,us.ci
-DOMAIN-SUFFIX,xingzhixiaozhuang.cn
-DOMAIN-SUFFIX,105117.xyz
-DOMAIN-SUFFIX,121628.xyz
-DOMAIN-SUFFIX,crisxie.top
-DOMAIN-SUFFIX,nanohajimi.mom
-DOMAIN-SUFFIX,lightllm.online
-DOMAIN-SUFFIX,codeme.me
-DOMAIN-SUFFIX,xiangcao.de
-DOMAIN-SUFFIX,215.im
-DOMAIN-SUFFIX,ctacy.cc
-DOMAIN-SUFFIX,ouu.ch
-DOMAIN-SUFFIX,67.si
-DOMAIN-SUFFIX,223384.xyz
-DOMAIN-SUFFIX,hybgzs.com
-DOMAIN-SUFFIX,windhub.cc
-DOMAIN-SUFFIX,dpdns.org
-DOMAIN-SUFFIX,x666.me
-DOMAIN,tracker.cinefiles.info
-DOMAIN-SUFFIX,duckmail.sbs
