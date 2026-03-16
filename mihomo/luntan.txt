@@ -7,4 +7,3 @@ DOMAIN-SUFFIX,v2ex.com
 # sidestore
 DOMAIN,gsa.apple.com
 DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,imgur.com
