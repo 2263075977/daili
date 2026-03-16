@@ -4,6 +4,5 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 # luntan
 DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,linux.do
 # sidestore
 DOMAIN,gsa.apple.com
