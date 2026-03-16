@@ -31,4 +31,3 @@ DOMAIN-SUFFIX,milktea.fun
 # jichang
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
-DOMAIN-SUFFIX,imgur.com
