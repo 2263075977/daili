@@ -7,11 +7,3 @@ DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,linux.do
 # sidestore
 DOMAIN,gsa.apple.com
-DOMAIN,ani.sidestore.io
-# img
-DOMAIN-SUFFIX,fanart.tv
-DOMAIN-SUFFIX,shields.io
-DOMAIN-SUFFIX,ahhhhfs.com
-DOMAIN,gravatar.loli.net
-DOMAIN,i.pximg.org
-DOMAIN-SUFFIX,anyrouter.top
