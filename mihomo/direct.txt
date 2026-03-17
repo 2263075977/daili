@@ -1,31 +1,3 @@
-# pt
-DOMAIN-SUFFIX,agsvpt.com
-DOMAIN-SUFFIX,pttime.org
-DOMAIN-SUFFIX,m-team.cc
-DOMAIN-SUFFIX,nanyangpt.com
-DOMAIN-SUFFIX,pthome.net
-DOMAIN-SUFFIX,avgv.cc
-DOMAIN-SUFFIX,pterclub.net
-DOMAIN-SUFFIX,hdfans.org
-DOMAIN-SUFFIX,ourbits.club
-DOMAIN-SUFFIX,joyhd.net
-DOMAIN-SUFFIX,hdfans.org
-DOMAIN-SUFFIX,hdhome.org
-DOMAIN-SUFFIX,hdtime.org
-DOMAIN-SUFFIX,hdsky.me
-DOMAIN-SUFFIX,hdarea.co
-DOMAIN-SUFFIX,ptsbao.club
-DOMAIN-SUFFIX,hdatmos.club
-DOMAIN-SUFFIX,hddolby.com
-DOMAIN-SUFFIX,keepfrds.com
-DOMAIN-SUFFIX,sjtu.edu.cn
-DOMAIN-SUFFIX,tjupt.org
-DOMAIN-SUFFIX,totheglory.im
-DOMAIN-SUFFIX,hd4fans.org
-DOMAIN-SUFFIX,zhuque.in
-DOMAIN-SUFFIX,hhanclub.net
-DOMAIN-SUFFIX,audiences.me
-DOMAIN-SUFFIX,haidan.video
 # ziyong
 DOMAIN-SUFFIX,milktea.fun
 # jichang
