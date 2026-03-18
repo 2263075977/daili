@@ -4,3 +4,4 @@ DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
 DOMAIN-KEYWORD,tracker
+DOMAIN-SUFFIX,hhanclub.net
