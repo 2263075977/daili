@@ -5,3 +5,4 @@ DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,hhanclub.net
+DOMAIN-SUFFIX,a123tv.com
