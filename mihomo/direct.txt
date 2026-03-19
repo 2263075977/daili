@@ -18,3 +18,4 @@ DOMAIN-SUFFIX,xcyycn.com
 DOMAIN-SUFFIX,ylys.tv
 DOMAIN-SUFFIX,w32z7vtd.com
 DOMAIN-SUFFIX,dyttzyapi.com
+DOMAIN-SUFFIX,jianpianips1.com
