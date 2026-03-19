@@ -16,3 +16,4 @@ DOMAIN-SUFFIX,xlys02.com
 DOMAIN-SUFFIX,hanju7.com
 DOMAIN-SUFFIX,xcyycn.com
 DOMAIN-SUFFIX,ylys.tv
+DOMAIN-SUFFIX,w32z7vtd.com
