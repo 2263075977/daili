@@ -10,3 +10,4 @@ DOMAIN-SUFFIX,qqqys.com
 DOMAIN-SUFFIX,4kvm.org
 DOMAIN-SUFFIX,aikanbot.com
 DOMAIN-SUFFIX,pcmp4.com
+DOMAIN-SUFFIX,bttwoo.com
