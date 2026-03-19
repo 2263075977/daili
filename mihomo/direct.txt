@@ -15,3 +15,4 @@ DOMAIN-SUFFIX,letu.me
 DOMAIN-SUFFIX,xlys02.com
 DOMAIN-SUFFIX,hanju7.com
 DOMAIN-SUFFIX,xcyycn.com
+DOMAIN-SUFFIX,ylys.tv
