@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,a123tv.com
 DOMAIN-SUFFIX,qqqys.com
 DOMAIN-SUFFIX,4kvm.org
+DOMAIN-SUFFIX,aikanbot.com
