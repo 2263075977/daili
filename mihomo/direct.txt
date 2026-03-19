@@ -12,3 +12,4 @@ DOMAIN-SUFFIX,aikanbot.com
 DOMAIN-SUFFIX,pcmp4.com
 DOMAIN-SUFFIX,bttwoo.com
 DOMAIN-SUFFIX,letu.me
+DOMAIN-SUFFIX,xlys02.com
