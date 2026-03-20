@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,iturrit.com
 DOMAIN-SUFFIX,aloxaf.com
 # emby
 DOMAIN,www.mb3admin.com
+DOMAIN-SUFFIX,byte16.com
