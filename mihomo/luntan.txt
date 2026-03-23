@@ -10,3 +10,4 @@ DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,dmvvv.com
 DOMAIN-SUFFIX,qzz.io
+DOMAIN-SUFFIX,crvesoft.top
