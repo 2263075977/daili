@@ -9,3 +9,4 @@ DOMAIN,gsa.apple.com
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,dmvvv.com
+DOMAIN-SUFFIX,qzz.io
