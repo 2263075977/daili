@@ -4,10 +4,8 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,springsunday.net
 # luntan
 DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,linux.do
 # sidestore
 DOMAIN,gsa.apple.com
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,imgur.com
-DOMAIN-SUFFIX,dmvvv.com
-DOMAIN-SUFFIX,qzz.io
-DOMAIN-SUFFIX,crvesoft.top
+
