@@ -3,3 +3,4 @@ DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 # sidestore
 DOMAIN,gsa.apple.com
+DOMAIN-SUFFIX,djjc.cfd
