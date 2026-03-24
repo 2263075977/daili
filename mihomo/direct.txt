@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,pterclub.net
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,agsvpt.com
+DOMAIN-SUFFIX,joyhd.net
