@@ -6,3 +6,4 @@ DOMAIN-SUFFIX,ammilk.com
 # pt
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,hhanclub.net
+DOMAIN-SUFFIX,pterclub.net
