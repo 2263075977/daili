@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,ammilk.com
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,pterclub.net
+DOMAIN-SUFFIX,fanart.tv
