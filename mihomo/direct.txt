@@ -3,19 +3,6 @@ DOMAIN-SUFFIX,milktea.fun
 # jichang
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
+# pt
 DOMAIN-KEYWORD,tracker
 DOMAIN-SUFFIX,hhanclub.net
-DOMAIN-SUFFIX,a123tv.com
-DOMAIN-SUFFIX,qqqys.com
-DOMAIN-SUFFIX,4kvm.org
-DOMAIN-SUFFIX,aikanbot.com
-DOMAIN-SUFFIX,pcmp4.com
-DOMAIN-SUFFIX,bttwoo.com
-DOMAIN-SUFFIX,letu.me
-DOMAIN-SUFFIX,xlys02.com
-DOMAIN-SUFFIX,hanju7.com
-DOMAIN-SUFFIX,xcyycn.com
-DOMAIN-SUFFIX,ylys.tv
-DOMAIN-SUFFIX,w32z7vtd.com
-DOMAIN-SUFFIX,dyttzyapi.com
-DOMAIN-SUFFIX,jianpianips1.com
