@@ -4,3 +4,4 @@ DOMAIN-SUFFIX,mikanani.me
 # sidestore
 DOMAIN,gsa.apple.com
 DOMAIN-SUFFIX,djjc.cfd
+DOMAIN-SUFFIX,qzz.io
