@@ -5,4 +5,3 @@ DOMAIN-SUFFIX,mikanani.me
 DOMAIN,gsa.apple.com
 DOMAIN-SUFFIX,djjc.cfd
 DOMAIN-SUFFIX,qzz.io
-DOMAIN-SUFFIX,jikun.fun
