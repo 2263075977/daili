@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,qzz.io
 DOMAIN-SUFFIX,yunai.link
 DOMAIN-SUFFIX,crvesoft.top
 DOMAIN-SUFFIX,anyrouter.top
+DOMAIN-SUFFIX,1080zyk7.com
