@@ -3,11 +3,6 @@ DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,mikanani.me
 # sidestore
 DOMAIN,gsa.apple.com
-DOMAIN-SUFFIX,djjc.cfd
-DOMAIN-SUFFIX,qzz.io
-DOMAIN-SUFFIX,yunai.link
-DOMAIN-SUFFIX,crvesoft.top
-DOMAIN-SUFFIX,1080zyk7.com
-DOMAIN-SUFFIX,250222.xyz
+
 DOMAIN-SUFFIX,anyrouter.top
-DOMAIN-SUFFIX,kyarucloud.moe
+
