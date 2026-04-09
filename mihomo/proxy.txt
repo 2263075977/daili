@@ -6,3 +6,4 @@ DOMAIN,gsa.apple.com
 
 DOMAIN-SUFFIX,anyrouter.top
 
+DOMAIN-SUFFIX,qzz.io
