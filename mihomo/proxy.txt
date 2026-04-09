@@ -10,4 +10,3 @@ DOMAIN-SUFFIX,qzz.io
 DOMAIN-SUFFIX,crvesoft.top
 DOMAIN-SUFFIX,250222.xyz
 DOMAIN-SUFFIX,tencentsb.me
-DOMAIN-SUFFIX,strokesplus.net
