@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,anyrouter.top
 
 DOMAIN-SUFFIX,qzz.io
 DOMAIN-SUFFIX,crvesoft.top
+DOMAIN-SUFFIX,250222.xyz
