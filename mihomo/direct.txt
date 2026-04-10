@@ -11,5 +11,6 @@ DOMAIN-SUFFIX,agsvpt.com
 DOMAIN-SUFFIX,joyhd.net
 
 DOMAIN-SUFFIX,fuliba2023.net
+DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
