@@ -12,3 +12,4 @@ DOMAIN-SUFFIX,joyhd.net
 
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN,tracker.cinefiles.info
+DOMAIN,www.ahhhhfs.com
