@@ -14,3 +14,4 @@ DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
+DOMAIN,subscribe.insight.synology.com
