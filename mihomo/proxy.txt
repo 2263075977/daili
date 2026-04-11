@@ -13,3 +13,4 @@ DOMAIN-SUFFIX,tencentsb.me
 DOMAIN-SUFFIX,arc.net
 DOMAIN-SUFFIX,mjurl.com
 DOMAIN,api.iturrit.com
+DOMAIN-SUFFIX,xn--4gq62f52gdss.top
