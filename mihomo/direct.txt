@@ -17,3 +17,4 @@ DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
 DOMAIN,subscribe.insight.synology.com
 DOMAIN-KEYWORD,idai
+DOMAIN-SUFFIX,250222.xyz
