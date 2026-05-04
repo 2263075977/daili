@@ -15,3 +15,4 @@ DOMAIN-SUFFIX,mjurl.com
 DOMAIN,api.iturrit.com
 DOMAIN-SUFFIX,xn--4gq62f52gdss.top
 DOMAIN-SUFFIX,250222.xyz
+DOMAIN-SUFFIX,tailscale.com
