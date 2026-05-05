@@ -1,0 +1,41 @@
+name: Generate Surge direct.txt
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "mihomo/direct.yaml"
+      - "scripts/convert_clash_direct_to_surge.py"
+      - ".github/workflows/generate-surge-direct.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Generate Surge rules
+        run: python3 scripts/convert_clash_direct_to_surge.py
+
+      - name: Commit generated direct.txt
+        run: |
+          if git diff --quiet -- mihomo/direct.txt; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add mihomo/direct.txt
+          git commit -m "chore: generate Surge direct rules"
+          git push
