@@ -38,14 +38,14 @@ for raw_line in SOURCE.read_text(encoding="utf-8").splitlines():
     value = match.group(1).strip()
 
     if mode == "keyword":
-        add_rule(f"DOMAIN-KEYWORD,{value.lstrip('.')},DIRECT")
+        add_rule(f"DOMAIN-KEYWORD,{value.lstrip('.')}")
     elif mode == "domain":
-        add_rule(f"DOMAIN,{value.lstrip('.')},DIRECT")
+        add_rule(f"DOMAIN,{value.lstrip('.')}")
     else:
         if value.startswith("."):
-            add_rule(f"DOMAIN-SUFFIX,{value.lstrip('.')},DIRECT")
+            add_rule(f"DOMAIN-SUFFIX,{value.lstrip('.')}")
         else:
-            add_rule(f"DOMAIN,{value},DIRECT")
+            add_rule(f"DOMAIN,{value}")
 
 TARGET.write_text("\n".join(rules) + "\n", encoding="utf-8")
 print(f"Generated {TARGET} with {len(rules)} rules")
