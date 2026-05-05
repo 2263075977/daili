@@ -28,7 +28,7 @@ jobs:
 
       - name: Commit generated direct.txt
         run: |
-          if git diff --quiet -- mihomo/direct.txt; then
+          if [ -z "$(git status --porcelain -- mihomo/direct.txt)" ]; then
             echo "No changes to commit"
             exit 0
           fi
