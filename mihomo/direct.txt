@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,milktea.fun
+DOMAIN-SUFFIX,milkfarm.net
+DOMAIN-SUFFIX,ammilk.com
+DOMAIN-SUFFIX,hhanclub.net
+DOMAIN-SUFFIX,pterclub.net
+DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,agsvpt.com
+DOMAIN-SUFFIX,joyhd.net
+DOMAIN-SUFFIX,fuliba2023.net
+DOMAIN-SUFFIX,wnflb2023.com
+DOMAIN-SUFFIX,wnflb99.com
+DOMAIN,tracker.cinefiles.info
+DOMAIN,www.ahhhhfs.com
+DOMAIN,subscribe.insight.synology.com
+DOMAIN-KEYWORD,idai
+DOMAIN-KEYWORD,tailscale.com
