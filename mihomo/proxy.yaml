@@ -1,19 +1,19 @@
 payload:
   # pt
-  - '.u2.dmhy.org'
-  - '.mikanani.me'
+  - '+.u2.dmhy.org'
+  - '+.mikanani.me'
 
   # sidestore
-  - 'gsa.apple.com'
+  - '+.gsa.apple.com'
+  - 'anyrouter.top'
   - '+.anyrouter.top'
 
   # jichang
-  - '.qzz.io'
-  - '.crvesoft.top'
-  - '.tencentsb.me'
-  - '.arc.net'
-  - '.mjurl.com'
-  - 'api.iturrit.com'
-  - '.xn--4gq62f52gdss.top'
-  - '.250222.xyz'
-
+  - '+.qzz.io'
+  - '+.crvesoft.top'
+  - '+.tencentsb.me'
+  - '+.arc.net'
+  - '+.mjjurl.com'
+  - '+.api.iturrit.com'
+  - '+.xn--4gq62f52gdss.top'
+  - '+.250222.xyz'
