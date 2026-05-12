@@ -5,7 +5,7 @@ payload:
 
   # sidestore
   - 'gsa.apple.com'
-  - '.anyrouter.top'
+  - '+.anyrouter.top'
 
   # jichang
   - '.qzz.io'
