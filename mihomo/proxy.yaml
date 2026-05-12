@@ -5,7 +5,6 @@ payload:
 
   # sidestore
   - '+.gsa.apple.com'
-  - 'anyrouter.top'
   - '+.anyrouter.top'
 
   # jichang
@@ -17,3 +16,5 @@ payload:
   - '+.api.iturrit.com'
   - '+.xn--4gq62f52gdss.top'
   - '+.250222.xyz'
+
+  - '+.javday.app'
