@@ -12,5 +12,4 @@ DOMAIN-SUFFIX,wnflb99.com
 DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
 DOMAIN,subscribe.insight.synology.com
-DOMAIN-KEYWORD,idai
-DOMAIN-KEYWORD,tailscale.com
+DOMAIN-SUFFIX,tailscale.com
