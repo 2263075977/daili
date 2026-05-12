@@ -12,9 +12,12 @@ payload:
   - '+.fanart.tv'
   - '+.agsvpt.com'
   - '+.joyhd.net'
+
   - '+.fuliba2023.net'
   - '+.wnflb2023.com'
   - '+.wnflb99.com'
+
+  - '+.movie-pilot.org'
 
   # DOMAIN（精确匹配）
   - 'tracker.cinefiles.info'
