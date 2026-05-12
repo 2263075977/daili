@@ -1,26 +1,25 @@
 payload:
   # ziyong
-  - '.milktea.fun'
-  
+  - '+.milktea.fun'
+
   # jichang
-  - '.milkfarm.net'
-  - '.ammilk.com'
-  
+  - '+.milkfarm.net'
+  - '+.ammilk.com'
+
   # pt
-  - '.hhanclub.net'
-  - '.pterclub.net'
-  - '.fanart.tv'
-  - '.agsvpt.com'
-  - '.joyhd.net'
-  - '.fuliba2023.net'
-  - '.wnflb2023.com'
-  - '.wnflb99.com'
-  
+  - '+.hhanclub.net'
+  - '+.pterclub.net'
+  - '+.fanart.tv'
+  - '+.agsvpt.com'
+  - '+.joyhd.net'
+  - '+.fuliba2023.net'
+  - '+.wnflb2023.com'
+  - '+.wnflb99.com'
+
   # DOMAIN（精确匹配）
   - 'tracker.cinefiles.info'
   - 'www.ahhhhfs.com'
   - 'subscribe.insight.synology.com'
-  
-  # DOMAIN-KEYWORD
-  - 'idai'
-  - '.tailscale.com'
+
+  # tailscale
+  - '+.tailscale.com'
