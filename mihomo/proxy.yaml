@@ -4,7 +4,9 @@ payload:
   - '+.mikanani.me'
 
   # sidestore
+  - '+.ani.sidestore.io'
   - '+.gsa.apple.com'
+  
   - '+.anyrouter.top'
 
   # jichang
