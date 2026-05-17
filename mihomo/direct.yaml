@@ -26,4 +26,3 @@ payload:
 
   # tailscale
   - '+.tailscale.com'
-  - '.net.cn'
