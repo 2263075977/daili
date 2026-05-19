@@ -14,3 +14,4 @@ DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
 DOMAIN,subscribe.insight.synology.com
 DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,bgm.tv
