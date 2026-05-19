@@ -21,7 +21,7 @@ payload:
 
   # mp
   - '+.movie-pilot.org'
-  - '.bgm.tv'
+  - '+.bgm.tv'
 
   # nas
   - 'tracker.cinefiles.info'
