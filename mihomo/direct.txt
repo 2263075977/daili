@@ -9,9 +9,9 @@ DOMAIN-SUFFIX,joyhd.net
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN-SUFFIX,wnflb99.com
-DOMAIN-SUFFIX,movie-pilot.org
-DOMAIN,tracker.cinefiles.info
 DOMAIN,www.ahhhhfs.com
+DOMAIN-SUFFIX,movie-pilot.org
+DOMAIN-SUFFIX,bgm.tv
+DOMAIN,tracker.cinefiles.info
 DOMAIN,subscribe.insight.synology.com
 DOMAIN-SUFFIX,tailscale.com
-DOMAIN-SUFFIX,bgm.tv
