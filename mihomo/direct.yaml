@@ -13,17 +13,20 @@ payload:
   - '+.agsvpt.com'
   - '+.joyhd.net'
 
+  # luntan
   - '+.fuliba2023.net'
   - '+.wnflb2023.com'
   - '+.wnflb99.com'
-
-  - '+.movie-pilot.org'
-
-  # DOMAIN（精确匹配）
-  - 'tracker.cinefiles.info'
   - 'www.ahhhhfs.com'
+
+  # mp
+  - '+.movie-pilot.org'
+  - '.bgm.tv'
+
+  # nas
+  - 'tracker.cinefiles.info'
   - 'subscribe.insight.synology.com'
 
   # tailscale
   - '+.tailscale.com'
-  - '.bgm.tv'
+
