@@ -30,3 +30,4 @@ payload:
   # tailscale
   - '+.tailscale.com'
 
+  - '+.bsbsb.top'
