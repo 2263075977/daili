@@ -13,3 +13,4 @@ DOMAIN-SUFFIX,xn--4gq62f52gdss.top
 DOMAIN-SUFFIX,250222.xyz
 DOMAIN-SUFFIX,javday.app
 DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,mojie.me
