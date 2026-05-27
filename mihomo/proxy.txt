@@ -14,4 +14,4 @@ DOMAIN-SUFFIX,250222.xyz
 DOMAIN-SUFFIX,javday.app
 DOMAIN-SUFFIX,missav.ai
 DOMAIN-SUFFIX,mojie.me
-DOMAIN-SUFFIX,de5.net
+DOMAIN,jiuuij.de5.net
