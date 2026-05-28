@@ -19,3 +19,4 @@ DOMAIN,subscribe.insight.synology.com
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,bsbsb.top
 DOMAIN-SUFFIX,obsidian.md
+DOMAIN-SUFFIX,ghproxy.net
