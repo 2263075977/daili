@@ -10,6 +10,8 @@ DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN-SUFFIX,wnflb99.com
 DOMAIN,www.ahhhhfs.com
+DOMAIN,www.ruanyifeng.com
+DOMAIN,idai.ly
 DOMAIN-SUFFIX,movie-pilot.org
 DOMAIN-SUFFIX,bgm.tv
 DOMAIN,tracker.cinefiles.info
