@@ -12,6 +12,8 @@ DOMAIN-SUFFIX,wnflb99.com
 DOMAIN,www.ahhhhfs.com
 DOMAIN,www.ruanyifeng.com
 DOMAIN,idai.ly
+DOMAIN,i.pximg.org
+DOMAIN,i.pixiv.re
 DOMAIN-SUFFIX,movie-pilot.org
 DOMAIN-SUFFIX,bgm.tv
 DOMAIN,tracker.cinefiles.info
