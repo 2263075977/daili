@@ -14,8 +14,6 @@ DOMAIN-SUFFIX,250222.xyz
 DOMAIN-SUFFIX,bgm.tv
 DOMAIN-SUFFIX,bangumi.tv
 DOMAIN-SUFFIX,chii.in
-DOMAIN-SUFFIX,next.bgm.tv
-DOMAIN-SUFFIX,api.bgm.tv
 DOMAIN-SUFFIX,javday.app
 DOMAIN-SUFFIX,missav.ai
 DOMAIN-SUFFIX,mojie.me
