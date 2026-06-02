@@ -16,7 +16,6 @@ DOMAIN,idai.ly
 DOMAIN,i.pximg.org
 DOMAIN,i.pixiv.re
 DOMAIN-SUFFIX,movie-pilot.org
-DOMAIN-SUFFIX,bgm.tv
 DOMAIN,tracker.cinefiles.info
 DOMAIN,subscribe.insight.synology.com
 DOMAIN-SUFFIX,tailscale.com
