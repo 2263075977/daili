@@ -1,4 +1,4 @@
-name: Generate Surge rule sets
+name: Generate Surge and sing-box rule sets
 
 on:
   push:
@@ -24,12 +24,12 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Generate Surge rules
+      - name: Generate rule sets
         run: python3 scripts/convert_clash_direct_to_surge.py
 
-      - name: Commit generated txt files
+      - name: Commit generated rule set files
         run: |
-          if [ -z "$(git status --porcelain -- mihomo/direct.txt mihomo/proxy.txt)" ]; then
+          if [ -z "$(git status --porcelain -- mihomo/direct.txt mihomo/proxy.txt sing-box/private_direct.json sing-box/private_proxy.json)" ]; then
             echo "No changes to commit"
             exit 0
           fi
@@ -37,6 +37,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add mihomo/direct.txt mihomo/proxy.txt
-          git commit -m "chore: generate Surge rule sets"
+          git add mihomo/direct.txt mihomo/proxy.txt sing-box/private_direct.json sing-box/private_proxy.json
+          git commit -m "chore: generate rule sets"
           git push
