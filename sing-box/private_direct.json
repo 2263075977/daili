@@ -1,36 +1,35 @@
 {
-    "version": 1,
-    "rules": [
-        {
-            "domain_suffix": [
-                "audiences.me",
-                "leaves.red",
-                "agsvpt.com",
-                "pttime.org",
-                "m-team.cc",
-                "nanyangpt.com",
-                "pthome.net",
-                "avgv.cc",
-                "pterclub.com",
-                "hdfans.org",
-                "ourbits.club",
-                "joyhd.net",
-                "hdhome.org",
-                "hdtime.org",
-                "hdsky.me",
-                "springsunday.net",
-                "hdarea.co",
-                "ptsbao.club",
-                "hdatmos.club",
-                "hddolby.com",
-                "keepfrds.com",
-                "sjtu.edu.cn",
-                "tjupt.org",
-                "totheglory.im",
-                "hd4fans.org",
-                "plex.direct",
-                "milktea.fun"
-            ]
-        }
-    ]
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "sub.xn--9swa.com",
+        "www.ahhhhfs.com",
+        "www.ruanyifeng.com",
+        "idai.ly",
+        "i.pximg.org",
+        "i.pixiv.re",
+        "tracker.cinefiles.info",
+        "subscribe.insight.synology.com"
+      ],
+      "domain_suffix": [
+        "milktea.fun",
+        "milkfarm.net",
+        "ammilk.com",
+        "hhanclub.net",
+        "pterclub.net",
+        "fanart.tv",
+        "agsvpt.com",
+        "joyhd.net",
+        "fuliba2023.net",
+        "wnflb2023.com",
+        "wnflb99.com",
+        "movie-pilot.org",
+        "tailscale.com",
+        "bsbsb.top",
+        "obsidian.md",
+        "ghproxy.net"
+      ]
+    }
+  ]
 }

@@ -1,10 +1,34 @@
 {
-    "version": 1,
-    "rules": [
-        {
-            "domain_suffix": [
-                "u2.dmhy.org"
-            ]
-        }
-    ]
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "jiuuij.de5.net"
+      ],
+      "domain_suffix": [
+        "u2.dmhy.org",
+        "mikanani.me",
+        "sidestore.io",
+        "gsa.apple.com",
+        "anyrouter.top",
+        "qzz.io",
+        "crvesoft.top",
+        "tencentsb.me",
+        "arc.net",
+        "mjjurl.com",
+        "api.iturrit.com",
+        "xn--4gq62f52gdss.top",
+        "250222.xyz",
+        "bgm.tv",
+        "bangumi.tv",
+        "chii.in",
+        "javday.app",
+        "missav.ai",
+        "mojie.me",
+        "121628.xyz",
+        "pp.ua",
+        "h-e.top"
+      ]
+    }
+  ]
 }
