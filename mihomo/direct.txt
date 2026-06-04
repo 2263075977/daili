@@ -25,3 +25,4 @@ DOMAIN-SUFFIX,ghproxy.net
 DOMAIN,new.sharedchat.cc
 DOMAIN-SUFFIX,muyuan.do
 DOMAIN-SUFFIX,huaibao.top
+DOMAIN-SUFFIX,x666.me
