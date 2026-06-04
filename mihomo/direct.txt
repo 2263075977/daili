@@ -26,3 +26,4 @@ DOMAIN,new.sharedchat.cc
 DOMAIN-SUFFIX,muyuan.do
 DOMAIN-SUFFIX,huaibao.top
 DOMAIN-SUFFIX,x666.me
+DOMAIN-SUFFIX,215.im
