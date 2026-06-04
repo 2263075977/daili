@@ -31,3 +31,4 @@ DOMAIN-SUFFIX,hxi.me
 DOMAIN-SUFFIX,42w.shop
 DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,ggff.net
+DOMAIN-SUFFIX,busiyi.world
