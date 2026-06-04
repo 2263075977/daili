@@ -24,3 +24,4 @@ DOMAIN-SUFFIX,obsidian.md
 DOMAIN-SUFFIX,ghproxy.net
 DOMAIN,new.sharedchat.cc
 DOMAIN-SUFFIX,muyuan.do
+DOMAIN-SUFFIX,huaibao.top
