@@ -2,6 +2,7 @@ DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
 DOMAIN,sub.xn--9swa.com
+DOMAIN-SUFFIX,mcii.cc
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,pterclub.net
 DOMAIN-SUFFIX,fanart.tv
