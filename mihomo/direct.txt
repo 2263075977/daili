@@ -31,4 +31,3 @@ DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,ggff.net
 DOMAIN-SUFFIX,busiyi.world
 DOMAIN-SUFFIX,ark717.com
-DOMAIN-SUFFIX,yangwj.me
