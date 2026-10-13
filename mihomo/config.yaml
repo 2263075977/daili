@@ -1,28 +1,26 @@
 proxy-providers:
-  zuhe:
+  zj:
     url: ""
     proxy: DIRECT
     type: http
     interval: 86400
-    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
+    health-check: {enable: true,url: "https://cp.cloudflare.com/generate_204",interval: 300}
 
 mixed-port: 7890
-redir-port: 7891
 bind-address: "*"
 allow-lan: true
 mode: rule
-log-level: info
+log-level: warning
 ipv6: true
 
-keep-alive-idle: 15
+keep-alive-idle: 600
 keep-alive-interval: 15
 disable-keep-alive: false
 
 find-process-mode: off
-global-client-fingerprint: chrome
 
 external-ui: ui
-external-ui-url: https://ghfast.top/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip
+external-ui-url: https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip
 external-controller: '[::]:9090'
 secret: "821259"
 
@@ -38,13 +36,12 @@ geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 24
 geox-url:
-  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
-  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
-
+  geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  geoip: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  
 dns:
   enable: true
+  cache-algorithm: arc
   prefer-h3: false
   use-hosts: true
   use-system-hosts: true
@@ -56,222 +53,196 @@ dns:
   fake-ip-range6: fdfe:dcba:9876::1/64
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - 'rule-set:fakeip-filter,private_direct,tracker,private,cn'
-  direct-nameserver:
-    - 211.140.13.188
-    - 211.140.188.188
-    - "[2409:8028:2000::1111]:53"
-    - "[2409:8028:2000::2222]:53"
+    - rule-set:lan
+    - rule-set:openclash_default
+    - rule-set:private_direct
+    - geosite:private
+    - geosite:cloudflare
+    - geosite:synology
+    - geosite:stripe
+    - geosite:google-cn
+    - geosite:category-games@cn
+    - geosite:category-game-platforms-download
+    - geosite:category-public-tracker
+    - geosite:cn
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
   proxy-server-nameserver:
     - https://223.5.5.5/dns-query
     - https://223.6.6.6/dns-query
+  direct-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver-policy:
+    "rule-set:lan,openclash_default,private_direct":
+      - 223.5.5.5
+      - 119.29.29.29
+    "geosite:private,cloudflare,synology,stripe,google-cn,category-games@cn,category-game-platforms-download,category-public-tracker,cn":
+      - 223.5.5.5
+      - 119.29.29.29
   nameserver:
-    - tls://223.5.5.5
-    - tls://223.6.6.6
+    - https://dns.google/dns-query#🇺🇸 美国节点
+    - https://cloudflare-dns.com/dns-query#🇺🇸 美国节点
 
+# 嗅探域名 可选配置
 sniffer:
   enable: true
-  sniff:
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff: 
     QUIC:
       ports: [443, 8443]
+    TLS:
+      ports: [443, 8443]
+    HTTP: 
+      ports: [80, 8080-8880]
+      override-destination: true
+  # 强制对这些域名进行嗅探（即使已经有目标地址）
+  force-domain:
+    - "+.netflix.com"  # Netflix 主域名
+    - "+.nflxvideo.net"  # Netflix CDN
+    - "+.amazonaws.com"  # AWS 云服务
+    - "+.media.dssott.com"  # Disney+ 流媒体
+  # 跳过对这些域名的嗅探（避免干扰）
   skip-domain:
-    - Mijia Cloud
+    - "+.apple.com"  # 苹果服务
+    - "Mijia Cloud"  # 米家云服务
+    - "dlg.io.mi.com"  # 小米设备通信
+    - "+.oray.com"  # 花生壳服务
+    - "+.sunlogin.net"  # 向日葵远程控制
+    - "+.push.apple.com"  # 苹果推送服务
 
 tun:
   enable: true
   stack: mixed
-  dns-hijack: ["any:53", "tcp://any:53"]
+  device: mihomo
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
-  device: nikki
+  dns-hijack:
+    - any:53
+    - tcp://any:53
 
 proxies:
-  - name: "\U0001F1ED\U0001F1F0HK_伪 |10.2MB/s|1%"
-    type: trojan
-    server: 1.2.3.4
-    port: 443
-    password: hkpassword
-    skip-cert-verify: true
-    sni: www.baidu.com
-    udp: true
-
-  - name: "\U0001F1FA\U0001F1F8US_伪 |8.9MB/s|2%"
-    type: trojan
-    server: 5.6.7.8
-    port: 443
-    password: uspassword
-    skip-cert-verify: true
-    sni: www.youtube.com
-    udp: true
-
-  - name: "\U0001F1F9\U0001F1FCJP_伪 |7.7MB/s|3%"
-    type: trojan
-    server: 9.10.11.12
-    port: 443
-    password: jppassword
-    skip-cert-verify: true
-    sni: www.google.co.jp
-    udp: true
-
-  - name: "\U0001F1F8\U0001F1ECSG_伪 |6.5MB/s|4%"
-    type: trojan
-    server: 13.14.15.16
-    port: 443
-    password: sgpassword
-    skip-cert-verify: true
-    sni: www.straitstimes.com
-    udp: true
-
-  - name: "\U0001F1F9\U0001F1FCTW_伪 |5.5MB/s|5%"
-    type: trojan
-    server: 17.18.19.20
-    port: 443
-    password: twpassword
-    skip-cert-verify: true
-    sni: www.ptt.cc
+  - name: "🌐 全球直连"
+    type: direct
     udp: true
 
 FallBack: &FallBack
   type: fallback
-  url: 'https://gstatic.com/generate_204'
-  interval: 600
+  url: 'https://cp.cloudflare.com/generate_204'
+  interval: 300
   lazy: true
+  timeout: 5000
+  max-failed-times: 3
 UrlTest: &UrlTest
   type: url-test
-  url: 'https://gstatic.com/generate_204'
+  url: 'https://cp.cloudflare.com/generate_204'
+  interval: 300
+  lazy: true
+  tolerance: 50
+  timeout: 5000
+  max-failed-times: 3
+LoadBalance: &LoadBalance
+  type: load-balance
+  url: 'https://cp.cloudflare.com/generate_204'
   interval: 300
   lazy: true
   include-all: true
-   
+  strategy: sticky-sessions
+  timeout: 5000
+  max-failed-times: 3
+    
 proxy-groups:
-  - {name: 代理, <<: *FallBack, proxies: [香港, 台湾, 日本, 狮城, 美国, 其他]}
-  - {name: 智能, <<: *FallBack, proxies: [美国, 台湾, 日本, 狮城, 其他, 香港]}
-  - {name: 电报, <<: *FallBack, proxies: [狮城, 香港, 台湾, 日本, 美国, 其他]}
-  - {name: 媒体, <<: *FallBack, proxies: [香港, 台湾, 日本, 狮城, 美国, 其他]}
-
-  - {name: 香港, <<: *UrlTest, filter: "(?i)港|hk|hongkong|hong kong|HK_"}
-  - {name: 台湾, <<: *UrlTest, filter: "(?i)台|tw|taiwan|TW_"}
-  - {name: 日本, <<: *UrlTest, filter: "(?i)日|jp|japan|JP_"}
-  - {name: 狮城, <<: *UrlTest, filter: "(?i)新|sg|singapore|SG_"}
-  - {name: 美国, <<: *UrlTest, filter: "(?i)美|us|unitedstates|united states|US_"}
-  - {name: 其他, <<: *UrlTest, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|HK_|TW_|JP_|SG_|US_)).*"}
+  - { name: "🗣️ 论坛交流", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "💬 即时通讯", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🤖 智能服务", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "📰 社交媒体", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🐙 代码平台", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🐳 容器仓库", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🛠️ 环境开发", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "📺 国外媒体", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🍎 苹果专属", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "💻 微软版图", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🚀 测速工具", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "💊 私有站点", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🔎 谷歌网络", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🎯 手动选择", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🔀 非标端口", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  - { name: "🐟 漏网之鱼", type: select, proxies: ["🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 狮城节点", "🇺🇸 美国节点", "🖥️ 自建节点", "🏠 家宽节点", "🌐 全球直连"] }
+  
+  - {name: 🇭🇰 香港节点, <<: *UrlTest, include-all: true, filter: "(?i)香", exclude-filter: "921680785|冰"}
+  - {name: 🇯🇵 日本节点, <<: *UrlTest, include-all: true, filter: "(?i)日", exclude-filter: "921680785|冰"}
+  - {name: 🇸🇬 狮城节点, <<: *UrlTest, include-all: true, filter: "(?i)新", exclude-filter: "921680785|冰"}
+  - {name: 🇺🇸 美国节点, <<: *UrlTest, include-all: true, filter: "(?i)美", exclude-filter: "921680785|冰"}
+  - {name: 🖥️ 自建节点, <<: *UrlTest, include-all: true, filter: "921680785"}
+  - {name: 🏠 家宽节点, <<: *UrlTest, include-all: true, filter: "冰"}
 
 rules:
-  - SRC-IP-CIDR,10.0.0.10/32,DIRECT
-  - RULE-SET,private_direct,DIRECT
-  - RULE-SET,private_proxy,代理
-  - RULE-SET,private,DIRECT
-  - RULE-SET,tracker,DIRECT
-  - RULE-SET,github,代理
-  - RULE-SET,microsoft,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google-cn,DIRECT
-  - RULE-SET,games-cn,DIRECT
-  - RULE-SET,spotify,香港
-  - RULE-SET,ai,智能
-  - RULE-SET,youtube,媒体
-  - RULE-SET,games,代理
-  - RULE-SET,geolocation-!cn,代理
-  - RULE-SET,cn,DIRECT
-  - RULE-SET,telegramip,电报,no-resolve
-  - RULE-SET,privateip,DIRECT,no-resolve
-  - RULE-SET,cnip,DIRECT
-  - MATCH,代理
+  - AND,((NETWORK,UDP),(DST-PORT,443),(GEOSITE,cn)),DIRECT
+  - AND,((NETWORK,UDP),(DST-PORT,443),(GEOIP,CN)),DIRECT
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT-DROP
+  - RULE-SET,private_direct,🌐 全球直连
+  - RULE-SET,private_proxy,🎯 手动选择
+  - GEOSITE,private,🌐 全球直连
+  - GEOSITE,cloudflare,🌐 全球直连
+  - GEOSITE,synology,🌐 全球直连
+  - GEOSITE,stripe,🌐 全球直连
+  - GEOSITE,google-cn,🌐 全球直连
+  - GEOSITE,category-games@cn,🌐 全球直连
+  - GEOSITE,category-game-platforms-download,🌐 全球直连
+  - GEOSITE,category-public-tracker,🌐 全球直连
+  - GEOSITE,category-forums,🗣️ 论坛交流
+  - GEOSITE,category-communication,💬 即时通讯
+  - GEOSITE,category-social-media-!cn,📰 社交媒体
+  - GEOSITE,category-ai-!cn,🤖 智能服务
+  - GEOSITE,github,🐙 代码平台
+  - GEOSITE,docker,🐳 容器仓库
+  - GEOSITE,category-dev,🛠️ 环境开发
+  - GEOSITE,category-entertainment,📺 国外媒体
+  - GEOSITE,apple,🍎 苹果专属
+  - GEOSITE,microsoft,💻 微软版图
+  - GEOSITE,category-speedtest,🚀 测速工具
+  - GEOSITE,category-pt,💊 私有站点
+  - GEOSITE,google,🔎 谷歌网络
+  - GEOSITE,gfw,🎯 手动选择
+  - GEOSITE,cn,🌐 全球直连
+
+  - GEOIP,private,🌐 全球直连,no-resolve
+  - GEOIP,telegram,💬 即时通讯,no-resolve
+  - GEOIP,twitter,📰 社交媒体,no-resolve
+  - GEOIP,facebook,📰 社交媒体,no-resolve
+  - GEOIP,google,🔎 谷歌网络,no-resolve
+  - GEOIP,cn,🌐 全球直连,no-resolve
+
+  - RULE-SET,custom_port_direct,🔀 非标端口
+  - MATCH,🐟 漏网之鱼
 
 
 rule-anchor:
-  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
-  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  mrs-domain: &mrs-domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  yaml-domain: &yaml-domain {type: http, interval: 86400, behavior: domain, format: yaml}
+  yaml-classical: &yaml-classical {type: http, interval: 86400, behavior: classical, format: yaml}
+
 rule-providers:
+  lan:
+    <<: *mrs-domain
+    url: "https://gh-proxy.com/https://github.com/levi882/OpenClash_SmartDNS_BTPT_Rules/raw/main/rule_converted_mrs/Lan_fake_ip_filter.mrs"
+
+  openclash_default:
+    <<: *mrs-domain
+    url: "https://gh-proxy.com/https://github.com/levi882/OpenClash_SmartDNS_BTPT_Rules/raw/main/rule_converted_mrs/OpenClash_Default_fake_ip_filter.mrs"
+
   private_direct:
-    type: http
-    behavior: classical
-    format: text
-    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/main/mihomo/direct.txt"
-    interval: 86400
+    <<: *yaml-domain
+    url: "https://raw.githubusercontent.com/2263075977/daili/main/mihomo/direct.yaml"
 
   private_proxy:
-    type: http
-    behavior: classical
-    format: text
-    url: "https://ghfast.top/https://raw.githubusercontent.com/2263075977/daili/main/mihomo/proxy.txt"
-    interval: 86400
+    <<: *yaml-domain
+    url: "https://raw.githubusercontent.com/2263075977/daili/main/mihomo/proxy.yaml"
 
-  fakeip-filter:
-    <<: *domain
-    url: "https://ghfast.top/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
-
-  private:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-
-  tracker:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tracker.mrs"
-
-  github:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
-
-  microsoft:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"
-
-  apple:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"
-
-  google-cn:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-cn.mrs"
-
-  games-cn:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-cn.mrs"
-
-  spotify:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs"
-
-  ai:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs"
-
-  youtube:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-
-  games:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games-!cn.mrs"
-
-  geolocation-!cn:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
-
-  cn:
-    <<: *domain
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
-
-  telegramip:
-    <<: *ip
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
-
-  google_ip:
-    <<: *ip
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
-
-  privateip:
-    <<: *ip
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
-
-  cnip:
-    <<: *ip
-    url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
-
+  custom_port_direct:
+    <<: *yaml-classical
+    url: "https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml"
