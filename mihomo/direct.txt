@@ -34,3 +34,4 @@ DOMAIN-SUFFIX,ark717.com
 DOMAIN-SUFFIX,fengshao1227.com
 DOMAIN-SUFFIX,lilililwan.xyz
 DOMAIN-SUFFIX,prism.uno
+DOMAIN-SUFFIX,hxi.me
