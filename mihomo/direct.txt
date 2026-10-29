@@ -35,4 +35,3 @@ DOMAIN-SUFFIX,fengshao1227.com
 DOMAIN-SUFFIX,lilililwan.xyz
 DOMAIN-SUFFIX,prism.uno
 DOMAIN-SUFFIX,hxi.me
-DOMAIN-SUFFIX,dbokutv.com
