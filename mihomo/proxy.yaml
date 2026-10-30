@@ -1,7 +1,6 @@
 payload:
   # pt
   - '+.dmhy.org'
-  - '+.mikanani.me'
 
   # sidestore
   - '+.sidestore.io'
@@ -19,12 +18,7 @@ payload:
   - '+.xn--4gq62f52gdss.top'
   - '+.250222.xyz'
 
-  - '+.bgm.tv'
-  - '+.bangumi.tv'
-  - '+.chii.in'
-
   - '+.javday.app'
-  - '+.missav.ai'
   - '+.mojie.me'
   - 'jiuuij.de5.net'
   - '+.121628.xyz'
