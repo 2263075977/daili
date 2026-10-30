@@ -1,5 +1,4 @@
 DOMAIN-SUFFIX,dmhy.org
-DOMAIN-SUFFIX,mikanani.me
 DOMAIN-SUFFIX,sidestore.io
 DOMAIN-SUFFIX,gsa.apple.com
 DOMAIN-SUFFIX,anyrouter.top
@@ -11,11 +10,7 @@ DOMAIN-SUFFIX,mjjurl.com
 DOMAIN-SUFFIX,api.iturrit.com
 DOMAIN-SUFFIX,xn--4gq62f52gdss.top
 DOMAIN-SUFFIX,250222.xyz
-DOMAIN-SUFFIX,bgm.tv
-DOMAIN-SUFFIX,bangumi.tv
-DOMAIN-SUFFIX,chii.in
 DOMAIN-SUFFIX,javday.app
-DOMAIN-SUFFIX,missav.ai
 DOMAIN-SUFFIX,mojie.me
 DOMAIN,jiuuij.de5.net
 DOMAIN-SUFFIX,121628.xyz
