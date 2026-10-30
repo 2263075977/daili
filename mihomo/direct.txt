@@ -1,13 +1,11 @@
 DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
-DOMAIN,sub.xn--9swa.com
 DOMAIN-SUFFIX,mcii.cc
 DOMAIN-SUFFIX,hhanclub.net
 DOMAIN-SUFFIX,pterclub.net
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,agsvpt.com
-DOMAIN-SUFFIX,joyhd.net
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN-SUFFIX,wnflb99.com
