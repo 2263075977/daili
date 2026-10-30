@@ -13,7 +13,6 @@ DOMAIN,idai.ly
 DOMAIN,i.pximg.org
 DOMAIN,i.pixiv.re
 DOMAIN-SUFFIX,movie-pilot.org
-DOMAIN,subscribe.insight.synology.com
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,bsbsb.top
 DOMAIN-SUFFIX,obsidian.md
