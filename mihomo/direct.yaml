@@ -10,7 +10,9 @@ payload:
   # pt
   - '+.fanart.tv'
   - '+.agsvpt.com'
-
+  # nas
+  - '+.subscribe.insight.synology.com'
+  
   # freshrss
   - '+.fuliba2023.net'
   - '+.wnflb2023.com'
