@@ -24,9 +24,6 @@ payload:
   # mp
   - '+.movie-pilot.org'
 
-  # nas
-  - 'subscribe.insight.synology.com'
-
   # tailscale
   - '+.tailscale.com'
 
