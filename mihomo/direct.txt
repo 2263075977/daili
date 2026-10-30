@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,ammilk.com
 DOMAIN-SUFFIX,mcii.cc
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,agsvpt.com
+DOMAIN-SUFFIX,subscribe.insight.synology.com
 DOMAIN-SUFFIX,fuliba2023.net
 DOMAIN-SUFFIX,wnflb2023.com
 DOMAIN-SUFFIX,wnflb99.com
