@@ -25,7 +25,6 @@ payload:
   - '+.movie-pilot.org'
 
   # nas
-  - 'tracker.cinefiles.info'
   - 'subscribe.insight.synology.com'
 
   # tailscale
