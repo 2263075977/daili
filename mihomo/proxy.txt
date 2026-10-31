@@ -18,3 +18,13 @@ DOMAIN-SUFFIX,pp.ua
 DOMAIN-SUFFIX,h-e.top
 DOMAIN-SUFFIX,42w.shop
 DOMAIN-SUFFIX,x666.me
+DOMAIN-SUFFIX,gimyai.tw
+DOMAIN-SUFFIX,dnvod.org
+DOMAIN-SUFFIX,4k-av.com
+DOMAIN-SUFFIX,streamingcommunityz.pink
+DOMAIN-SUFFIX,ikanbot.com
+DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,trvod.com
+DOMAIN-SUFFIX,modujx11.com
