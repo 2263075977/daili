@@ -14,7 +14,6 @@ payload:
   - '+.subscribe.insight.synology.com'
   
   # freshrss
-  - '+.fuliba2023.net'
   - '+.wnflb2023.com'
   - '+.wnflb99.com'
   - 'www.ahhhhfs.com'
@@ -116,8 +115,9 @@ payload:
   - '+.ry-pic.com'
   - '+.lzzyimg.com'
   - '+.ryzypics.com'
-  # 威尔伯TV
+  # 威尔伯TV（play.* 为美国反代 CDN，geosite:cn 亦收录，直连可达；若看片卡顿可移到 proxy）
   - '+.wei2bo.com'
+  - '+.modujx11.com'
   # 小黑米
   - '+.xiaoheimi.cc'
   # 布布影视 / 哔嘀影视
@@ -195,22 +195,11 @@ payload:
   # 金牌
   - '+.jiabaide.cn'
 
-  # ===== 播放器公共依赖（大陆） =====
+  # ===== 播放器公共依赖（大陆，未被 geosite:cn 收录的部分） =====
   - '+.imgdb.cn'
-  - '+.byteimg.com'
-  - '+.geetest.com'
-  - '+.geevisit.com'
-  - '+.doubanio.com'
   - '+.placehold.co'
-  # 网盘 / 云盘（网盘资源播放）
-  - '+.115.com'
-  - '+.115cdn.com'
-  - '+.123pan.com'
-  - '+.alipan.com'
-  - '+.aliyundrive.com'
+  # 网盘 / 云盘（网盘资源播放，geosite 未收录）
   - '+.189.cn'
   - '+.uc.cn'
   - '+.quark.cn'
   - '+.pan.baidu.com'
-  - '+.xunlei.com'
-  - '+.139.com'

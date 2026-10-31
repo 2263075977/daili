@@ -38,12 +38,5 @@ payload:
   - '+.streamingcommunityz.pink'
   # iKanBot（海外站）
   - '+.ikanbot.com'
-  # 韩小圈（workers.dev 大陆被墙）
-  - '+.workers.dev'
-  # TMDB 海报 / 元数据（大陆被墙或极慢）
-  - '+.tmdb.org'
-  - '+.themoviedb.org'
   # 唐人街影院（海外站）
   - '+.trvod.com'
-  # 威尔伯TV 播放源（美国）
-  - '+.modujx11.com'
