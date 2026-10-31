@@ -23,8 +23,4 @@ DOMAIN-SUFFIX,dnvod.org
 DOMAIN-SUFFIX,4k-av.com
 DOMAIN-SUFFIX,streamingcommunityz.pink
 DOMAIN-SUFFIX,ikanbot.com
-DOMAIN-SUFFIX,workers.dev
-DOMAIN-SUFFIX,tmdb.org
-DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,trvod.com
-DOMAIN-SUFFIX,modujx11.com
