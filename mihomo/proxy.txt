@@ -1,4 +1,3 @@
-DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,sidestore.io
 DOMAIN-SUFFIX,gsa.apple.com
 DOMAIN-SUFFIX,anyrouter.top
