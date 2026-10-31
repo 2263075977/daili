@@ -75,7 +75,6 @@ DOMAIN-SUFFIX,ry-pic.com
 DOMAIN-SUFFIX,lzzyimg.com
 DOMAIN-SUFFIX,ryzypics.com
 DOMAIN-SUFFIX,wei2bo.com
-DOMAIN-SUFFIX,modujx11.com
 DOMAIN-SUFFIX,xiaoheimi.cc
 DOMAIN-SUFFIX,bubuyingshi.com
 DOMAIN-SUFFIX,bubuzhuiju.com
@@ -130,4 +129,3 @@ DOMAIN-SUFFIX,placehold.co
 DOMAIN-SUFFIX,189.cn
 DOMAIN-SUFFIX,uc.cn
 DOMAIN-SUFFIX,quark.cn
-DOMAIN-SUFFIX,pan.baidu.com
