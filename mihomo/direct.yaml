@@ -115,9 +115,8 @@ payload:
   - '+.ry-pic.com'
   - '+.lzzyimg.com'
   - '+.ryzypics.com'
-  # 威尔伯TV（play.* 为美国反代 CDN，geosite:cn 亦收录，直连可达；若看片卡顿可移到 proxy）
+  # 威尔伯TV（play.modujx11-16.com 已被 geosite:cn 收录，无需重复）
   - '+.wei2bo.com'
-  - '+.modujx11.com'
   # 小黑米
   - '+.xiaoheimi.cc'
   # 布布影视 / 哔嘀影视
@@ -198,8 +197,7 @@ payload:
   # ===== 播放器公共依赖（大陆，未被 geosite:cn 收录的部分） =====
   - '+.imgdb.cn'
   - '+.placehold.co'
-  # 网盘 / 云盘（网盘资源播放，geosite 未收录）
+  # 网盘 / 云盘（网盘资源播放；geosite 未收录，baidu.com 已覆盖 pan.baidu.com 故不列）
   - '+.189.cn'
   - '+.uc.cn'
   - '+.quark.cn'
-  - '+.pan.baidu.com'
