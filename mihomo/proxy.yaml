@@ -1,7 +1,4 @@
 payload:
-  # pt
-  - '+.dmhy.org'
-
   # sidestore
   - '+.sidestore.io'
   - '+.gsa.apple.com'
