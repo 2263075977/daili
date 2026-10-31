@@ -26,3 +26,24 @@ payload:
   - '+.h-e.top'
   - '+.42w.shop'
   - '+.x666.me'
+
+  # ===== OmniBox 影视采集：需走代理 =====
+  # Gimy剧迷（台湾站，播放需港台IP）
+  - '+.gimyai.tw'
+  # 多瑙影院（北美站）
+  - '+.dnvod.org'
+  # 4KMP / 4K-AV（海外站）
+  - '+.4k-av.com'
+  # StreamingCommunity（欧洲站）
+  - '+.streamingcommunityz.pink'
+  # iKanBot（海外站）
+  - '+.ikanbot.com'
+  # 韩小圈（workers.dev 大陆被墙）
+  - '+.workers.dev'
+  # TMDB 海报 / 元数据（大陆被墙或极慢）
+  - '+.tmdb.org'
+  - '+.themoviedb.org'
+  # 唐人街影院（海外站）
+  - '+.trvod.com'
+  # 威尔伯TV 播放源（美国）
+  - '+.modujx11.com'
