@@ -76,3 +76,5 @@ payload:
   - '+.wbbb1.com'
   # 华视影院（CN 直连 Cloudflare 403 Attention Required；节点实测 273~537ms 正常）
   - '+.huavod.com'
+  # 毒舌影视（CN 直连 850/420，节点实测 319ms 正常）
+  - '+.dushe03.com'
