@@ -24,7 +24,6 @@ payload:
   - '+.42w.shop'
   - '+.x666.me'
 
-  # ===== OmniBox 影视采集：需走代理 =====
   # Gimy剧迷（台湾站，播放需港台IP）
   - '+.gimyai.tw'
   # 多瑙影院（北美站）
@@ -39,16 +38,9 @@ payload:
   # 215.im（Cloudflare 前置，yyds.215.im 需代理）
   - '+.215.im'
 
-  # ===== 大陆直连被墙（实测 SNI/TLS 被 RST 或直连超时；海外节点 200 正常）=====
-  # 瓜子影视 API
-  - '+.6a7nnf7.com'
-  - '+.rmedphk.com'
-  - '+.umygrx3.com'
-  - '+.w32z7vtd.com'
   # 如意资源（站点 + 采集 API + 图床）
   - '+.ryzyw.com'
   - '+.rycjapi.com'
-  - '+.lzzyimg.com'
   - '+.ryzypics.com'
   # 毒舌影视
   - '+.xnhrsb.com'

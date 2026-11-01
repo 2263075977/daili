@@ -48,7 +48,6 @@ payload:
   # 3Q影视 / 多多追剧
   - '+.dduotv01.top'
   - '+.duoduozhuiju.com'
-  - '+.323433ssdfd.top'
   # 808影视
   - '+.ztzssz.com'
   # 88看球
@@ -57,18 +56,10 @@ payload:
   - '+.hdmoli.me'
   # LIBVIO
   - '+.libvio.app'
-  - '+.libvio.mov'
-  - '+.libvio.run'
-  - '+.libvios.com'
   # PPnix
   - '+.ppnix.com'
   # 七味
   - '+.pcmp4.com'
-  - '+.qnhot.com'
-  - '+.qnnull.com'
-  - '+.qwfilm.com'
-  - '+.qwmkv.com'
-  - '+.qwnull.com'
   # 乐兔 / 莫小影
   - '+.qqys01.com'
   # 低端影视
@@ -86,9 +77,6 @@ payload:
   - '+.zxzjhd.com'
   # 太二影视
   - '+.tai2.lol'
-  # 如意资源
-  - '+.rytvapi.com'
-  - '+.ry-pic.com'
   # 威尔伯TV（play.modujx11-16.com 已被 geosite:cn 收录，无需重复）
   - '+.wei2bo.com'
   # 布布影视 / 哔嘀影视
@@ -102,7 +90,6 @@ payload:
   - '+.iysdq.tv'
   # 新韩剧网
   - '+.9hanju.com'
-  - '+.hanju7.com'
   # 星辰影院
   - '+.xcyycn.com'
   # 木兮
