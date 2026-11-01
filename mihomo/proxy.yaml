@@ -38,10 +38,12 @@ payload:
   # 215.im（Cloudflare 前置，yyds.215.im 需代理）
   - '+.215.im'
 
-  # 如意资源（站点 + 采集 API + 图床）
+  # 如意资源（站点 + 采集 API + 图床，均是多备胎）
   - '+.ryzyw.com'
   - '+.rycjapi.com'
+  - '+.rytvapi.com'
   - '+.ryzypics.com'
+  - '+.lzzyimg.com'
   # 毒舌影视（毒舌影视.js 主站，大陆直连 TLS RST）
   - '+.xnhrsb.com'
   # 人人影视PRO
@@ -62,6 +64,15 @@ payload:
   - '+.novipnoad.net'
   # FKTV / 凡客TV
   - '+.fktv.me'
+  # 七味（这几个镜像大陆直连超时，节点 300ms 可用）
+  - '+.qwmkv.com'
+  - '+.qwnull.com'
+  - '+.qwfilm.com'
+  # 瓜子影视 API（API_HOSTS[1..4]，大陆直连 TLS RST，节点 260~310ms）
+  - '+.6a7nnf7.com'
+  - '+.rmedphk.com'
+  - '+.umygrx3.com'
+  - '+.w32z7vtd.com'
   # 耐视点播
   - '+.nsvod.me'
   # 歪比巴卜（国内线路 A 记录指向坏掉的美国 IP，海外解析走 CF；节点实测 74ms/196ms）

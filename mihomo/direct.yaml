@@ -46,21 +46,27 @@ payload:
 
   # 123TV
   - '+.a123tv.com'
-  # 3Q影视 / 多多追剧
+  # 3Q影视 / 多多追剧（HOST_CANDIDATES[0] + 发布页）
   - '+.dduotv01.top'
   - '+.duoduozhuiju.com'
+  - '+.323433ssdfd.top'
   # 808影视
   - '+.ztzssz.com'
   # 88看球
   - '+.88kanqiu.cc'
   # HDmoli
   - '+.hdmoli.me'
-  # LIBVIO
+  # LIBVIO（.app=发布页，其余为 HOST_CANDIDATES 轮换域名）
   - '+.libvio.app'
+  - '+.libvio.mov'
+  - '+.libvios.com'
+  - '+.libvio.run'
   # PPnix
   - '+.ppnix.com'
-  # 七味
+  # 七味（站点族 7 个镜像；直连可用的放这里，直连被墙的见 proxy）
   - '+.pcmp4.com'
+  - '+.qnhot.com'
+  - '+.qnnull.com'
   # 乐兔 / 莫小影
   - '+.qqys01.com'
   # 低端影视
@@ -91,6 +97,7 @@ payload:
   - '+.iysdq.tv'
   # 新韩剧网
   - '+.9hanju.com'
+  - '+.hanju7.com'
   # 星辰影院
   - '+.xcyycn.com'
   # 木兮
@@ -116,7 +123,9 @@ payload:
   - '+.pianku.pro'
   # 独播库
   - '+.dbokutv.com'
-  # 瓜子影视
+  # 如意资源（图床备选，主图床见 proxy）
+  - '+.ry-pic.com'
+  # 瓜子影视（API_HOSTS[0]）
   - '+.uozvr.com'
   # 电影人生
   - '+.dyrsok.com'
