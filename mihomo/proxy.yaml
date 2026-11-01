@@ -72,3 +72,9 @@ payload:
   - '+.fktv.me'
   # 耐视点播
   - '+.nsvod.me'
+  # 华视影院（CN 直连被 Cloudflare 拦截，海外节点 200）
+  - '+.huavod.com'
+  # TVB云播（大陆直连证书不匹配，海外 200）
+  - '+.viptv01.com'
+  # 热播（v.rbotv.cn 海外 200，大陆直连证书错）
+  - '+.rbotv.cn'

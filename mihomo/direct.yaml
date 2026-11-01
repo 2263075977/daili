@@ -62,8 +62,6 @@ payload:
   - '+.libvios.com'
   # PPnix
   - '+.ppnix.com'
-  # TVB云播
-  - '+.viptv01.com'
   # 七味
   - '+.pcmp4.com'
   - '+.qnhot.com'
@@ -80,9 +78,6 @@ payload:
   - '+.ymck.pro'
   # 剧圈圈
   - '+.jqqzx.cc'
-  # 华视影院
-  - '+.huavod.com'
-  - '+.huarenlivewebsite.top'
   # 卧龙
   - '+.wolongzyw.com'
   # 四万影视
@@ -102,7 +97,6 @@ payload:
   # 影猫仓库
   - '+.03yy.live'
   - '+.kxyytv.com'
-  - '+.playr.top'
   - '+.zhenlang.cc'
   # 影视大全
   - '+.iysdq.tv'
@@ -117,7 +111,6 @@ payload:
   - '+.zzoc.cc'
   # 枫叶 / 枫叶4K
   - '+.budaichuchen.net'
-  - '+.cd-zj.com'
   - '+.hzqingshan.com'
   # 柯南影视
   - '+.knvod.com'
@@ -128,13 +121,10 @@ payload:
   - '+.850088.xyz'
   # 毒舌影视 / 毒舌03
   - '+.dushe03.com'
-  - '+.bavdxfg.cn'
   # 永乐视频
   - '+.ylys.tv'
   # 泰剧网
   - '+.taijuwang.com'
-  # 热播
-  - '+.rbotv.cn'
   # 爱奇艺资源站
   - '+.iqiyizy.cc'
   - '+.iqiyizyapi.com'
