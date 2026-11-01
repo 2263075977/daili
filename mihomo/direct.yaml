@@ -162,3 +162,6 @@ payload:
 
   # 52ccl（大陆站点 223.109.3.x）
   - '+.52ccl.cn'
+
+  # UHDDolby（杜比 2026-10-22 换名，原 hddolby.com 已停放作废；CF 直连 380ms，未污染）
+  - '+.uhddolby.com'
