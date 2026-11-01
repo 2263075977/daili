@@ -117,7 +117,6 @@ payload:
   - '+.211997.xyz'
   - '+.921080.xyz'
   # 歪比巴卜
-  - '+.wbbb1.com'
   - '+.850088.xyz'
   # 毒舌影视 / 毒舌03
   - '+.dushe03.com'
@@ -160,10 +159,3 @@ payload:
 
   # 52ccl（大陆站点 223.109.3.x）
   - '+.52ccl.cn'
-  # ===== 待定：直连与代理均不通，下次复核后删 =====
-  # 华视影院（CN 403 Attention Required，代理也 403）
-  - '+.huavod.com'
-  # TVB云播（CN 证书错，代理 TLS RST）
-  - '+.viptv01.com'
-  # 热播（CN 与代理均证书错）
-  - '+.rbotv.cn'

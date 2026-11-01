@@ -72,3 +72,7 @@ payload:
   - '+.fktv.me'
   # 耐视点播
   - '+.nsvod.me'
+  # 歪比巴卜（国内线路 A 记录指向坏掉的美国 IP，海外解析走 CF；节点实测 74ms/196ms）
+  - '+.wbbb1.com'
+  # 华视影院（CN 直连 Cloudflare 403 Attention Required；节点实测 273~537ms 正常）
+  - '+.huavod.com'
