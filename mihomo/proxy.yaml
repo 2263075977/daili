@@ -31,8 +31,6 @@ payload:
   - '+.dnvod.org'
   # 4KMP / 4K-AV（海外站）
   - '+.4k-av.com'
-  # StreamingCommunity（欧洲站）
-  - '+.streamingcommunityz.pink'
   # iKanBot（海外站）
   - '+.ikanbot.com'
   # 唐人街影院（海外站）
@@ -40,3 +38,37 @@ payload:
 
   # 215.im（Cloudflare 前置，yyds.215.im 需代理）
   - '+.215.im'
+
+  # ===== 大陆直连被墙（实测 SNI/TLS 被 RST 或直连超时；海外节点 200 正常）=====
+  # 瓜子影视 API
+  - '+.6a7nnf7.com'
+  - '+.rmedphk.com'
+  - '+.umygrx3.com'
+  - '+.w32z7vtd.com'
+  # 如意资源（站点 + 采集 API + 图床）
+  - '+.ryzyw.com'
+  - '+.rycjapi.com'
+  - '+.lzzyimg.com'
+  - '+.ryzypics.com'
+  # 毒舌影视
+  - '+.xnhrsb.com'
+  # 人人影视PRO
+  - '+.renren.pro'
+  # 小黑米
+  - '+.xiaoheimi.cc'
+  # LIBVIO（.app/.lat/.mov/.run 多个轮换域名里只有 .lat 被墙）
+  - '+.libvio.lat'
+  # 布布影视
+  - '+.bubuyingshi.com'
+  # 乌云影视
+  - '+.wooyun.tv'
+  # 4KVM
+  - '+.4kvm.org'
+  # 两个BT
+  - '+.bttwoo.com'
+  # NO视频
+  - '+.novipnoad.net'
+  # FKTV / 凡客TV
+  - '+.fktv.me'
+  # 耐视点播
+  - '+.nsvod.me'
