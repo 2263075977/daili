@@ -25,9 +25,10 @@ payload:
   # mp
   - '+.movie-pilot.org'
 
-  # tailscale
+  # tailscale（DERP/STUN 打洞必须直连，geosite:!cn 把它判成代理是有意反着写）
   - '+.tailscale.com'
 
+  # 自用服务 / 面板（历史条目，按需增删）
   - '+.bsbsb.top'
   - '+.obsidian.md'
   - '+.ghproxy.net'

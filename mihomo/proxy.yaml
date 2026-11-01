@@ -42,13 +42,13 @@ payload:
   - '+.ryzyw.com'
   - '+.rycjapi.com'
   - '+.ryzypics.com'
-  # 毒舌影视
+  # 毒舌影视（毒舌影视.js 主站，大陆直连 TLS RST）
   - '+.xnhrsb.com'
   # 人人影视PRO
   - '+.renren.pro'
   # 小黑米
   - '+.xiaoheimi.cc'
-  # LIBVIO（.app/.lat/.mov/.run 多个轮换域名里只有 .lat 被墙）
+  # LIBVIO（轮换域名只留 .lat；.app 是发布页，见 direct）
   - '+.libvio.lat'
   # 布布影视
   - '+.bubuyingshi.com'
@@ -68,5 +68,5 @@ payload:
   - '+.wbbb1.com'
   # 华视影院（CN 直连 Cloudflare 403 Attention Required；节点实测 273~537ms 正常）
   - '+.huavod.com'
-  # 毒舌影视（CN 直连 850/420，节点实测 319ms 正常）
+  # 毒舌03（毒舌03.js 主站；CN 直连 850 人机验证，节点 319ms 正常）
   - '+.dushe03.com'
