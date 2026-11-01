@@ -107,6 +107,12 @@ payload:
   # 枫叶 / 枫叶4K
   - '+.budaichuchen.net'
   - '+.hzqingshan.com'
+  # Auete影视（新域名，2026-11-01 实测直连 200 @0.6s，标题「Auete影视网」）
+  - '+.aeete.com'
+  # StreamingCommunity（新域名，直连 200 @0.8s，CF 前置；若看片慢可移 proxy）
+  - '+.streaming-community.biz'
+  # TVB云播（新域名 hktvyun.com，只允许大陆 IP——港/美节点全 FAIL，必须直连）
+  - '+.hktvyun.com'
   # 热播（http://v.rbotv.cn 直连 200、/v3 API 返回 sign error 说明后端在跑；仅 443 证书坏，脚本用 80）
   - '+.rbotv.cn'
   # 永乐视频（CF 523＝源站宕机，域名本身正常，恢复后直连即可用）
