@@ -20,7 +20,6 @@ DOMAIN-SUFFIX,ghproxy.net
 DOMAIN,new.sharedchat.cc
 DOMAIN-SUFFIX,muyuan.do
 DOMAIN-SUFFIX,huaibao.top
-DOMAIN-SUFFIX,215.im
 DOMAIN-SUFFIX,hybgzs.com
 DOMAIN-SUFFIX,ggff.net
 DOMAIN-SUFFIX,busiyi.world
@@ -129,3 +128,4 @@ DOMAIN-SUFFIX,placehold.co
 DOMAIN-SUFFIX,189.cn
 DOMAIN-SUFFIX,uc.cn
 DOMAIN-SUFFIX,quark.cn
+DOMAIN-SUFFIX,52ccl.cn
