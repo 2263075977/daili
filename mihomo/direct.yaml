@@ -107,6 +107,10 @@ payload:
   # 枫叶 / 枫叶4K
   - '+.budaichuchen.net'
   - '+.hzqingshan.com'
+  # 热播（http://v.rbotv.cn 直连 200、/v3 API 返回 sign error 说明后端在跑；仅 443 证书坏，脚本用 80）
+  - '+.rbotv.cn'
+  # 永乐视频（CF 523＝源站宕机，域名本身正常，恢复后直连即可用）
+  - '+.ylys.tv'
   # 柯南影视
   - '+.knvod.com'
   - '+.211997.xyz'
