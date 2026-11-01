@@ -37,3 +37,6 @@ payload:
   - '+.ikanbot.com'
   # 唐人街影院（海外站）
   - '+.trvod.com'
+
+  # 215.im（Cloudflare 前置，yyds.215.im 需代理）
+  - '+.215.im'
