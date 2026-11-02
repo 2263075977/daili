@@ -166,8 +166,8 @@ payload:
   # UHDDolby（杜比 2026-10-22 换名，原 hddolby.com 已停放作废；CF 直连 380ms，未污染）
   - '+.uhddolby.com'
 
-  # 现网漏网复核（2026-11-02）：按确认范围扩展 vorto.cc / hktvyb.top 根域及全部子域
-  # agentrouter.top 保持精确匹配，与代理的 agentrouter.org 分开处理
+  # 现网漏网复核（2026-11-02）：按确认范围覆盖以下根域及全部子域
+  # agentrouter.top 直连，与代理的 agentrouter.org 分开处理
   - '+.vorto.cc'
-  - 'agentrouter.top'
+  - '+.agentrouter.top'
   - '+.hktvyb.top'
