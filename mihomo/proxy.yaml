@@ -86,8 +86,8 @@ payload:
   #     （31.13.73.9 / 59.24.3.173），必须放在这里走 fake-ip + 代理
   - '+.u2.dmhy.org'
 
-  # 现网漏网复核（2026-11-02）：前两项直连 HTTPS 被重置；OpenList 代理更快
-  # agentrouter.org 覆盖主域/www；不要与可直连的 agentrouter.top 合并
+  # 现网漏网复核（2026-11-02）：已测服务代理更合适，按确认范围扩展根域及全部子域
+  # agentrouter.org 保持原范围；air-outer.com / oplist.org 不再仅匹配 ps / api
   - '+.agentrouter.org'
-  - 'ps.air-outer.com'
-  - 'api.oplist.org'
+  - '+.air-outer.com'
+  - '+.oplist.org'
