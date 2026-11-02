@@ -165,3 +165,9 @@ payload:
 
   # UHDDolby（杜比 2026-10-22 换名，原 hddolby.com 已停放作废；CF 直连 380ms，未污染）
   - '+.uhddolby.com'
+
+  # 现网漏网复核（2026-11-02）：仅精确主机名，不扩展到未测试子域
+  # PixPin 翻译入口；agentrouter.top 与 .org 分开处理；TVB 解析页
+  - 'pixpin-translate.vorto.cc'
+  - 'agentrouter.top'
+  - 'jx.hktvyb.top'

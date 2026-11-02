@@ -85,3 +85,9 @@ payload:
   # PT：u2.dmhy.org 是 category-pt 里 dmhy.org 的子域，custom_cn 会先抢走并给污染 IP
   #     （31.13.73.9 / 59.24.3.173），必须放在这里走 fake-ip + 代理
   - '+.u2.dmhy.org'
+
+  # 现网漏网复核（2026-11-02）：前两项直连 HTTPS 被重置；OpenList 代理更快
+  # agentrouter.org 覆盖主域/www；不要与可直连的 agentrouter.top 合并
+  - '+.agentrouter.org'
+  - 'ps.air-outer.com'
+  - 'api.oplist.org'
