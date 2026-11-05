@@ -91,3 +91,26 @@ payload:
   - '+.agentrouter.org'
   - '+.air-outer.com'
   - '+.oplist.org'
+
+  # 现网漏网复核（2026-11-05）：直连失败或明显更差（各 5~10 次）
+  # CF 双 A 记录之一 100% 超时：tracker.anibt.net 104.21.36.142 0/7、www.pttime.fun 104.21.79.76 0/7、
+  # whatshub.top 104.21.71.123 0/7 —— 给直连会随解析结果时通时断
+  - 'tracker.anibt.net'
+  - 'www.pttime.fun'
+  - 'whatshub.top'
+  # 直连超时（各 0/5）
+  - 'alerts.home-assistant.io'
+  - 'www.hwinfo.com'
+  - 'www.wagnardsoft.com'
+  - 'forums.guru3d.com'
+  - 'static.addtoany.com'
+  - 'i.postimg.cc'
+  - 'zpsbkj.stripocdn.email'
+  # 直连可达但慢 3 倍（1.5~2.2s vs 0.5~0.8s）
+  - 'lsky.useforall.com'
+  # updates.logitech.com：直连 8/10 可达但 TLS 0.64~6.4s 抖动（301 -> support.logi.com）
+  - 'updates.logitech.com'
+  # 订阅（维持现状；显式化，避免兜底组被切走后自举链路断）
+  - 'sub.us.ci'
+  - 'sub.pjq.cc.cd'
+  - 'zrf.zrf.me'

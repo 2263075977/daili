@@ -171,3 +171,37 @@ payload:
   - '+.vorto.cc'
   - '+.agentrouter.top'
   - '+.hktvyb.top'
+
+  # 现网漏网复核（2026-11-05）：逐个 A 记录直连全通过，且不慢于代理
+  # 证书/CRL 组（digicert、sectigo/usertrust、lencr、amazontrust）不在此列：
+  # 已由 config.yaml 的 GEOSITE,category-cas 兜底覆盖（HTTP/80 直连 87~104ms，代理 250~430ms）
+  # API / 服务
+  - 'usemagpie.ai'
+  - 'mcp.exa.ai'
+  - 'api.tavily.com'
+  - 'api.met.no'
+  - 'aa015h6buqvih86i1.api.met.no'
+  - 'jszyapi.com'
+  - 'api.revenuecat.com'
+  - 'event.sc.gearupportal.com'
+  - 'www.mb3admin.com'
+  # 静态 CDN / 小工具
+  - 'd23iz4esrwkib6.cloudfront.net'
+  - 'portainer-io-assets.sfo2.digitaloceanspaces.com'
+  - 'cdn.skk.moe'
+  - 's13.gifyu.com'
+  - 's15.gifyu.com'
+  - 'ipinfo.io'
+  - 'models.dev'
+  - 'gh-proxy.com'
+  - 'api.open-meteo.com'
+  - 'www.rfc-editor.org'
+  - 'version.pm2.io'
+  - 'telemetry.nodered.org'
+  - 'insights.navidrome.org'
+  - 'update.shuax.com'
+  - 'connect.emby.media'
+  - 'api.bangumi.lat'
+  - 'api.animeko.org'
+  - 'client-data.knak.io'
+  - 'hb.unsnow.org'
