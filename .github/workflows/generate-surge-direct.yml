@@ -7,6 +7,7 @@ on:
       - "mihomo/direct.yaml"
       - "mihomo/proxy.yaml"
       - "mihomo/reject.yaml"
+      - "adguard/reject.txt"
       - "scripts/convert_clash_direct_to_surge.py"
       - ".github/workflows/generate-surge-direct.yml"
   workflow_dispatch:
@@ -18,6 +19,14 @@ concurrency:
   group: generate-surge-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  GEN: scripts/convert_clash_direct_to_surge.py
+  FILES: >-
+    mihomo/direct.txt
+    mihomo/proxy.txt
+    mihomo/reject.txt
+    adguard/reject.txt
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -27,15 +36,26 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
-      - name: Generate Surge rules
-        run: python3 scripts/convert_clash_direct_to_surge.py
-
-      - name: Show rule counts
-        run: wc -l mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt
-
-      - name: Commit generated txt files
+      # 只告警不失败：产物落后/被手改时下面会按 yaml 重新生成并提交
+      - name: Detect drift against yaml
         run: |
-          FILES="mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt"
+          if ! python3 "$GEN" --check; then
+            echo "::warning title=规则集产物与 yaml 不一致::已按 yaml 重新生成并提交，手改的内容可能被覆盖"
+          fi
+
+      - name: Generate rule sets
+        run: python3 "$GEN"
+
+      - name: Verify rule sets
+        run: |
+          python3 "$GEN" --check          # 生成后必须与期望完全一致（幂等）
+          wc -l mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt adguard/reject.txt
+          for f in $FILES; do
+            test -s "$f" || { echo "::error::$f 为空"; exit 1; }
+          done
+
+      - name: Commit generated rule sets
+        run: |
           if [ -z "$(git status --porcelain -- $FILES)" ]; then
             echo "No changes to commit"
             exit 0
@@ -45,5 +65,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add $FILES
-          git commit -m "chore: generate Surge rule sets (direct/proxy/reject)"
+          git commit -m "chore: generate rule sets (surge direct/proxy/reject + adguard reject)"
           git push

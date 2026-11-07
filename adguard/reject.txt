@@ -1,6 +1,7 @@
 ! 恶意 JS 注入 / 仿冒 CDN 域名（Funnull / RingH23）
-! 与 mihomo/reject.yaml 同一集合；给 LocalDNS 的 AdGuard 引擎使用（DNS 层拦截，
-! 覆盖不经过 mihomo 的设备）。改一处必须同步改另一处，sync-rules.sh 会校验两侧集合一致。
+! 本文件由 GitHub Action 从 mihomo/reject.yaml 生成（scripts/convert_clash_direct_to_surge.py），
+! 与 mihomo/reject.txt 同一集合：DNS 层用 AdGuard 语法 ||domain^ ，覆盖不经 mihomo 的设备。
+! 请勿手改域名列表：改集合改 mihomo/reject.yaml，两侧一致性由 workflow 校验。
 !
 ! 依据：奇安信 XLab《Funnull Resurfaces…》IOC；本机 2026-11 现场证据见
 ! localdns-setup/diag/DEPLOY-2026-11-07-malicious-js-block.md
