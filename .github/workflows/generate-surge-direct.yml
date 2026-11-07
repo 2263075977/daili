@@ -1,0 +1,49 @@
+name: Generate Surge rule sets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "mihomo/direct.yaml"
+      - "mihomo/proxy.yaml"
+      - "mihomo/reject.yaml"
+      - "scripts/convert_clash_direct_to_surge.py"
+      - ".github/workflows/generate-surge-direct.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-surge-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Generate Surge rules
+        run: python3 scripts/convert_clash_direct_to_surge.py
+
+      - name: Show rule counts
+        run: wc -l mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt
+
+      - name: Commit generated txt files
+        run: |
+          FILES="mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add $FILES
+          git commit -m "chore: generate Surge rule sets (direct/proxy/reject)"
+          git push
