@@ -206,3 +206,20 @@ payload:
   - 'api.animeko.org'
   - 'client-data.knak.io'
   - 'hb.unsnow.org'
+
+  # 漏网复核第二批（2026-11-07）：直连逐 A 记录 3 轮通过，且不慢于代理
+  # Debian：deb.debian.org 3/3 206（TLS 166~193ms）vs 代理 418~479ms，security 同样直连更快
+  # debian.map.fastlydns.net 是 Fastly 的边缘名（自身 Host 返回 500，真实流量是 debian 的 Host），
+  # 名单里按这个名字记录，两个都要收
+  - '+.debian.org'
+  - 'debian.map.fastlydns.net'
+  # ByteDance 短视频/剪辑 CDN：全 IP 3/3 403（CDN 根正常），TLS 98~173ms vs 代理 174~224ms
+  # akamaized.net 保持精确，不扩大到 +.akamaized.net（会波及同域其他租户）
+  - 'v16.akamaized.net'
+  - '+.toutiao50.com'
+  - '+.topbuzzcdn.com'
+  - '+.capcutvod.com'
+  - '+.lemon8cdn.com'
+  - '+.xzcs3zlph.com'
+  # 网易游戏地图静态（Akamai，2 条 IP 3/3 403，TLS 187ms）
+  - 'nglbs-maps-overseas-static.nie.easebar.com'

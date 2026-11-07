@@ -114,3 +114,14 @@ payload:
   - 'sub.us.ci'
   - 'sub.pjq.cc.cd'
   - 'zrf.zrf.me'
+
+  # 漏网复核第二批（2026-11-07）：成人 / 盗版 CDN，按既定策略显式留代理
+  # （直连其实更快，但策略优先；见 diag 记录）
+  # surrit.com / saawsedge.com / growcdnssedge.com 都是 MissAV 的 HLS 边缘
+  # （surrit 需 missav Referer；saawsedge 证书 *.saawsedge.com 且 urlscan 抓到 edge-hls 的 m3u8；
+  #  growcdnssedge 证书 CN=*.rsc.cdn77.org，Wayback 有 video.growcdnssedge.com）
+  # cloudwindow-route.com 是 CDN77-Turbo 的 UGC CDN，与 missav 会话同期出现，归属未证实，按保守处理
+  - '+.surrit.com'
+  - '+.saawsedge.com'
+  - '+.growcdnssedge.com'
+  - '+.cloudwindow-route.com'
