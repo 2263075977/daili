@@ -1,0 +1,33 @@
+# 恶意 JS 注入 / 仿冒 CDN 拦截集（Funnull 家族，RingH23）
+#
+# 依据
+# - 奇安信 XLab《Funnull Resurfaces: Exposing RingH23 Arsenal and MacCMS Supply Chain Attacks》
+#   明确列出仿冒 CDN 的恶意 JS 域名：code.jquecy[.]com、cdn.jsdclivr[.]com、
+#   cdnjs.clondflare[.]com、static.bytedauce[.]com；另提到 bdustatic[.]com、jsdelivr[.]vip、
+#   macoms[.]la，以及作为远程开关（usercache）的 ailyunoss[.]com（仿冒阿里云 OSS）。
+# - SOCRadar IOC 库把 cdn.jsdclivr.com / jquecy.com 标为 High。
+#
+# 本机现场证据（2026-11 复核）
+# - 兜底组连接日志出现 cdn.jsdclivr.net（11-06 07:31~08:16，13 次 / 82KB）；
+#   11-03 出现 oss-cn-hangzhou2.ailyunoss.com（该家族控制开关）。
+# - www.akianime.cc / dm1.xfdm.pro 首页在「手机 UA + 外链 Referer」下注入
+#   xxSJRox / MfXKwV / ptbnNbK 特征代码，解出第一阶段脚本
+#   https://code.jquecy.com/jquery.min-3.6.8.js。
+# - 该家族只对移动端 + 中国时区 + 外链 Referer 投递，并拒绝机房 IP，
+#   所以从服务器侧直接探测常得到空白响应（15 字节），空白不代表无害。
+#
+# 命名仿冒对照：jsdclivr≈jsdelivr、jquecy≈jquery、clondflare≈cloudflare、
+#               bytedauce≈bytedance、ailyunoss≈阿里云 OSS、bdustatic≈百度静态、macoms.la≈maccms.la
+#
+# 使用：mihomo 以 behavior=domain 的 HTTP yaml 规则集加载，规则为 RULE-SET,reject,REJECT。
+#       只做拦截，不加入 direct/proxy 名单；LocalDNS 侧未同步（不改其 AdGuard 规则）。
+payload:
+  - '+.jsdclivr.net'
+  - '+.jsdclivr.com'
+  - '+.jquecy.com'
+  - '+.clondflare.com'
+  - '+.bytedauce.com'
+  - '+.bdustatic.com'
+  - '+.jsdelivr.vip'
+  - '+.macoms.la'
+  - '+.ailyunoss.com'
