@@ -39,16 +39,16 @@ jobs:
       # 只告警不失败：产物落后/被手改时下面会按 yaml 重新生成并提交
       - name: Detect drift against yaml
         run: |
-          if ! python3 "$GEN" --check; then
+          if ! python "$GEN" --check; then
             echo "::warning title=规则集产物与 yaml 不一致::已按 yaml 重新生成并提交，手改的内容可能被覆盖"
           fi
 
       - name: Generate rule sets
-        run: python3 "$GEN"
+        run: python "$GEN"
 
       - name: Verify rule sets
         run: |
-          python3 "$GEN" --check          # 生成后必须与期望完全一致（幂等）
+          python "$GEN" --check          # 生成后必须与期望完全一致（幂等）
           wc -l mihomo/direct.txt mihomo/proxy.txt mihomo/reject.txt adguard/reject.txt
           for f in $FILES; do
             test -s "$f" || { echo "::error::$f 为空"; exit 1; }

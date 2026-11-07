@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """把 mihomo domain 规则集 yaml 转成下游可用格式，并做一致性校验。
 
 产物：
@@ -14,8 +14,9 @@
 adin：adguard 侧统一写成 ||domain^（等价 DOMAIN-SUFFIX，含子域）。
 
 用法：
-  python3 scripts/convert_clash_direct_to_surge.py          # 生成/更新产物
-  python3 scripts/convert_clash_direct_to_surge.py --check  # 只校验产物是否落后于 yaml
+  python scripts/convert_clash_direct_to_surge.py          # 生成/更新产物
+  python scripts/convert_clash_direct_to_surge.py --check  # 只校验产物是否落后于 yaml
+  （全程只用 python：Windows 上 python3 只是商店别名，CI/Ubuntu 上 python 由 python-is-python3 提供）
 
 注意（历史 bug）：
   * 模式标记曾用子串匹配，reject.yaml 注释里的 'behavior=domain' 会把模式切成
