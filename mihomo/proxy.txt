@@ -72,3 +72,5 @@ DOMAIN-SUFFIX,surrit.com
 DOMAIN-SUFFIX,saawsedge.com
 DOMAIN-SUFFIX,growcdnssedge.com
 DOMAIN-SUFFIX,cloudwindow-route.com
+DOMAIN,i.pximg.org
+DOMAIN,i.pixiv.re

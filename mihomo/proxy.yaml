@@ -125,3 +125,13 @@ payload:
   - '+.saawsedge.com'
   - '+.growcdnssedge.com'
   - '+.cloudwindow-route.com'
+
+  # 直连改代理（2026-11-11）：Pixiv 图床的第三方反代（Cloudflare 前置，x-proxied-by: Pixiv.CatDE）
+  # 两条原在 direct.yaml 的 freshrss 段。实测直连 IPv6 黑洞：AAAA 2606:4700:3035::ac43:da60
+  # 10s 硬超时、2606:4700:3031::ac43:8796 12s 硬超时；IPv4 虽通但 TTFB 2.27s / 2.15~2.73s，
+  # 浏览器优先 AAAA 时会先卡死再回落。节点侧同一 URL：i.pximg.org 香港 137ms / 自建 229ms，
+  # i.pixiv.re 香港 1381ms / 自建 1402ms（mihomo group delay，单次采样，仅代表首字节）。
+  # 注意：必须同时从 direct.yaml 删除。private_direct 在规则第 0 条，且被列入 dns.fake-ip-filter，
+  # 只加这里仍会拿真实 IP 直连，不生效。
+  - 'i.pximg.org'
+  - 'i.pixiv.re'
