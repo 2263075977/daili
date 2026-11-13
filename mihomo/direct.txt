@@ -2,7 +2,6 @@ DOMAIN-SUFFIX,milktea.fun
 DOMAIN-SUFFIX,milkfarm.net
 DOMAIN-SUFFIX,ammilk.com
 DOMAIN-SUFFIX,mcii.cc
-DOMAIN-SUFFIX,tomorin.xyz
 DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,agsvpt.com
 DOMAIN-SUFFIX,subscribe.insight.synology.com
